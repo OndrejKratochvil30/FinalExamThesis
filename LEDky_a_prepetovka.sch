@@ -1,0 +1,578 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:BS250 Q?
+U 1 1 5FB82FE1
+P 5750 3200
+AR Path="/5FB82FE1" Ref="Q?"  Part="1" 
+AR Path="/5FB7A269/5FB82FE1" Ref="Q1"  Part="1" 
+F 0 "Q1" V 6092 3200 50  0000 C CNN
+F 1 "BS250" V 6001 3200 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5950 3125 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 5750 3200 50  0001 L CNN
+	1    5750 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5FB82FE7
+P 5750 5050
+F 0 "#PWR0106" H 5750 4800 50  0001 C CNN
+F 1 "GND" H 5755 4877 50  0000 C CNN
+F 2 "" H 5750 5050 50  0001 C CNN
+F 3 "" H 5750 5050 50  0001 C CNN
+	1    5750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5FB82FED
+P 5600 5050
+F 0 "#PWR0107" H 5600 4800 50  0001 C CNN
+F 1 "GND" H 5605 4877 50  0000 C CNN
+F 2 "" H 5600 5050 50  0001 C CNN
+F 3 "" H 5600 5050 50  0001 C CNN
+	1    5600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5FB82FF3
+P 5250 3100
+AR Path="/5FB82FF3" Ref="H?"  Part="1" 
+AR Path="/5FB7A269/5FB82FF3" Ref="H1"  Part="1" 
+F 0 "H1" V 5487 3103 50  0000 C CNN
+F 1 "MountingHole_Pad" V 5396 3103 50  0000 C CNN
+F 2 "" H 5250 3100 50  0001 C CNN
+F 3 "~" H 5250 3100 50  0001 C CNN
+	1    5250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FB82FF9
+P 5250 3400
+F 0 "H2" V 5487 3403 50  0000 C CNN
+F 1 "MountingHole_Pad" V 5396 3403 50  0000 C CNN
+F 2 "" H 5250 3400 50  0001 C CNN
+F 3 "~" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 3400 5600 3400
+$Comp
+L Transistor_FET:BS250 Q?
+U 1 1 5FB83000
+P 7750 3200
+AR Path="/5FB83000" Ref="Q?"  Part="1" 
+AR Path="/5FB7A269/5FB83000" Ref="Q4"  Part="1" 
+F 0 "Q4" V 8092 3200 50  0000 C CNN
+F 1 "BS250" V 8001 3200 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7950 3125 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 7750 3200 50  0001 L CNN
+	1    7750 3200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6350 3100 6350 3400
+Wire Wire Line
+	6350 3400 6850 3400
+Wire Wire Line
+	6350 3100 7550 3100
+Wire Wire Line
+	7350 3400 7750 3400
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 5FB8300A
+P 6850 4000
+AR Path="/5FB8300A" Ref="SW?"  Part="1" 
+AR Path="/5FB7A269/5FB8300A" Ref="SW1"  Part="1" 
+F 0 "SW1" V 6896 3952 50  0000 R CNN
+F 1 "SW_MEC_5G" V 6805 3952 50  0000 R CNN
+F 2 "" H 6850 4200 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6850 4200 50  0001 C CNN
+	1    6850 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:DMN2230U Q?
+U 1 1 5FB83010
+P 6450 4400
+AR Path="/5FB83010" Ref="Q?"  Part="1" 
+AR Path="/5FB7A269/5FB83010" Ref="Q2"  Part="1" 
+F 0 "Q2" H 6655 4446 50  0000 L CNN
+F 1 "DMN2230U" H 6655 4355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6650 4325 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds31180.pdf" H 6450 4400 50  0001 L CNN
+	1    6450 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5FB83016
+P 6350 5050
+F 0 "#PWR0108" H 6350 4800 50  0001 C CNN
+F 1 "GND" H 6355 4877 50  0000 C CNN
+F 2 "" H 6350 5050 50  0001 C CNN
+F 3 "" H 6350 5050 50  0001 C CNN
+	1    6350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R 100K?
+U 1 1 5FB8301C
+P 6850 4900
+AR Path="/5FB8301C" Ref="100K?"  Part="1" 
+AR Path="/5FB7A269/5FB8301C" Ref="100K1"  Part="1" 
+F 0 "100K1" H 6920 4946 50  0000 L CNN
+F 1 "R" H 6920 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 4900 50  0001 C CNN
+F 3 "~" H 6850 4900 50  0001 C CNN
+	1    6850 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4200 6850 4400
+Wire Wire Line
+	6650 4400 6850 4400
+Connection ~ 6850 4400
+Connection ~ 6850 3400
+Wire Wire Line
+	6850 3400 7050 3400
+Wire Wire Line
+	6350 4200 6350 4150
+$Comp
+L power:VCC #+3V0105
+U 1 1 5FB83028
+P 6350 3650
+F 0 "#+3V0105" H 6438 3733 50  0000 L CNN
+F 1 "VCC" H 6438 3642 50  0000 L CNN
+F 2 "" H 6350 3650 50  0001 C CNN
+F 3 "" H 6350 3650 50  0001 C CNN
+	1    6350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3650 6350 3850
+$Comp
+L power:GND #PWR0109
+U 1 1 5FB8302F
+P 6850 5050
+F 0 "#PWR0109" H 6850 4800 50  0001 C CNN
+F 1 "GND" H 6855 4877 50  0000 C CNN
+F 2 "" H 6850 5050 50  0001 C CNN
+F 3 "" H 6850 5050 50  0001 C CNN
+	1    6850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3400 6850 3800
+$Comp
+L Device:R 10K2
+U 1 1 5FB83036
+P 6350 4000
+F 0 "10K2" H 6420 4046 50  0000 L CNN
+F 1 "R" H 6420 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 4000 50  0001 C CNN
+F 3 "~" H 6350 4000 50  0001 C CNN
+	1    6350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R 100K?
+U 1 1 5FB8303C
+P 7200 3400
+AR Path="/5FB8303C" Ref="100K?"  Part="1" 
+AR Path="/5FB7A269/5FB8303C" Ref="100K2"  Part="1" 
+F 0 "100K2" V 6993 3400 50  0000 C CNN
+F 1 "R" V 7084 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7130 3400 50  0001 C CNN
+F 3 "~" H 7200 3400 50  0001 C CNN
+	1    7200 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:DMN2230U Q?
+U 1 1 5FB83042
+P 7300 4400
+AR Path="/5FB83042" Ref="Q?"  Part="1" 
+AR Path="/5FB7A269/5FB83042" Ref="Q3"  Part="1" 
+F 0 "Q3" H 7504 4446 50  0000 L CNN
+F 1 "DMN2230U" H 7504 4355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7500 4325 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds31180.pdf" H 7300 4400 50  0001 L CNN
+	1    7300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN2230U Q?
+U 1 1 5FB83048
+P 7850 4400
+AR Path="/5FB83048" Ref="Q?"  Part="1" 
+AR Path="/5FB7A269/5FB83048" Ref="Q5"  Part="1" 
+F 0 "Q5" H 8055 4446 50  0000 L CNN
+F 1 "DMN2230U" H 8055 4355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8050 4325 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds31180.pdf" H 7850 4400 50  0001 L CNN
+	1    7850 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW2
+U 1 1 5FB8304E
+P 8350 4650
+F 0 "SW2" V 8396 4602 50  0000 R CNN
+F 1 "SW_MEC_5G" V 8305 4602 50  0000 R CNN
+F 2 "" H 8350 4850 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 8350 4850 50  0001 C CNN
+	1    8350 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 4400 7100 4400
+$Comp
+L Device:R 2M?
+U 1 1 5FB83055
+P 7600 3600
+AR Path="/5FB83055" Ref="2M?"  Part="1" 
+AR Path="/5FB7A269/5FB83055" Ref="2M1"  Part="1" 
+F 0 "2M1" V 7393 3600 50  0000 C CNN
+F 1 "R" V 7484 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7530 3600 50  0001 C CNN
+F 3 "~" H 7600 3600 50  0001 C CNN
+	1    7600 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C 10uf?
+U 1 1 5FB8305B
+P 7600 3800
+AR Path="/5FB8305B" Ref="10uf?"  Part="1" 
+AR Path="/5FB7A269/5FB8305B" Ref="10uf1"  Part="1" 
+F 0 "10uf1" V 7348 3800 50  0000 C CNN
+F 1 "C" V 7439 3800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_01005_0402Metric" H 7638 3650 50  0001 C CNN
+F 3 "~" H 7600 3800 50  0001 C CNN
+	1    7600 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 3400 7750 3600
+Connection ~ 7750 3400
+Wire Wire Line
+	7750 3600 7750 3800
+Connection ~ 7750 3600
+Wire Wire Line
+	7750 3800 7750 4200
+Connection ~ 7750 3800
+Wire Wire Line
+	7400 4200 7400 3800
+Wire Wire Line
+	7400 3600 7450 3600
+Wire Wire Line
+	7450 3800 7400 3800
+Connection ~ 7400 3800
+Wire Wire Line
+	7400 3800 7400 3600
+$Comp
+L power:GND #PWR0110
+U 1 1 5FB8306C
+P 7400 5050
+F 0 "#PWR0110" H 7400 4800 50  0001 C CNN
+F 1 "GND" H 7405 4877 50  0000 C CNN
+F 2 "" H 7400 5050 50  0001 C CNN
+F 3 "" H 7400 5050 50  0001 C CNN
+	1    7400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5FB83072
+P 7750 5050
+F 0 "#PWR0111" H 7750 4800 50  0001 C CNN
+F 1 "GND" H 7755 4877 50  0000 C CNN
+F 2 "" H 7750 5050 50  0001 C CNN
+F 3 "" H 7750 5050 50  0001 C CNN
+	1    7750 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4600 6350 5050
+Wire Wire Line
+	5600 3400 5600 5050
+Wire Wire Line
+	5750 3400 5750 5050
+Wire Wire Line
+	6850 4400 6850 4750
+Wire Wire Line
+	7400 4600 7400 5050
+Wire Wire Line
+	7750 4600 7750 5050
+$Comp
+L power:GND #PWR0112
+U 1 1 5FB8307E
+P 8350 5050
+F 0 "#PWR0112" H 8350 4800 50  0001 C CNN
+F 1 "GND" H 8355 4877 50  0000 C CNN
+F 2 "" H 8350 5050 50  0001 C CNN
+F 3 "" H 8350 5050 50  0001 C CNN
+	1    8350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R 10K3
+U 1 1 5FB83084
+P 8350 4000
+F 0 "10K3" H 8420 4046 50  0000 L CNN
+F 1 "R" H 8420 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8280 4000 50  0001 C CNN
+F 3 "~" H 8350 4000 50  0001 C CNN
+	1    8350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #+3V0106
+U 1 1 5FB8308A
+P 8350 3700
+F 0 "#+3V0106" H 8438 3783 50  0000 L CNN
+F 1 "VCC" H 8438 3692 50  0000 L CNN
+F 2 "" H 8350 3700 50  0001 C CNN
+F 3 "" H 8350 3700 50  0001 C CNN
+	1    8350 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4400 8350 4400
+Wire Wire Line
+	8350 4400 8350 4450
+Wire Wire Line
+	8350 4400 8350 4150
+Connection ~ 8350 4400
+Wire Wire Line
+	8350 3850 8350 3700
+Wire Wire Line
+	8350 5050 8350 4850
+$Comp
+L power:VCC #+3V0107
+U 1 1 5FB83096
+P 8350 2850
+F 0 "#+3V0107" H 8438 2933 50  0000 L CNN
+F 1 "VCC" H 8438 2842 50  0000 L CNN
+F 2 "" H 8350 2850 50  0001 C CNN
+F 3 "" H 8350 2850 50  0001 C CNN
+	1    8350 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3100 8350 3100
+Wire Wire Line
+	8350 3100 8350 2850
+Wire Wire Line
+	8350 4400 8650 4400
+Wire Wire Line
+	5350 3100 5550 3100
+Wire Wire Line
+	5950 3100 6350 3100
+Connection ~ 6350 3100
+Wire Wire Line
+	6150 4150 6350 4150
+Connection ~ 6350 4150
+$Comp
+L Device:LED D?
+U 1 1 5FB830A6
+P 3700 4700
+AR Path="/5FB830A6" Ref="D?"  Part="1" 
+AR Path="/5FB7A269/5FB830A6" Ref="D4"  Part="1" 
+F 0 "D4" H 3693 4445 50  0000 C CNN
+F 1 "LED" H 3693 4536 50  0000 C CNN
+F 2 "" H 3700 4700 50  0001 C CNN
+F 3 "~" H 3700 4700 50  0001 C CNN
+	1    3700 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FB830AC
+P 3350 4700
+AR Path="/5FB830AC" Ref="D?"  Part="1" 
+AR Path="/5FB7A269/5FB830AC" Ref="D3"  Part="1" 
+F 0 "D3" H 3343 4445 50  0000 C CNN
+F 1 "LED" H 3343 4536 50  0000 C CNN
+F 2 "" H 3350 4700 50  0001 C CNN
+F 3 "~" H 3350 4700 50  0001 C CNN
+	1    3350 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FB830B2
+P 3000 4700
+AR Path="/5FB830B2" Ref="D?"  Part="1" 
+AR Path="/5FB7A269/5FB830B2" Ref="D2"  Part="1" 
+F 0 "D2" H 2993 4445 50  0000 C CNN
+F 1 "LED" H 2993 4536 50  0000 C CNN
+F 2 "" H 3000 4700 50  0001 C CNN
+F 3 "~" H 3000 4700 50  0001 C CNN
+	1    3000 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FB830B8
+P 2650 4700
+AR Path="/5FB830B8" Ref="D?"  Part="1" 
+AR Path="/5FB7A269/5FB830B8" Ref="D1"  Part="1" 
+F 0 "D1" H 2643 4445 50  0000 C CNN
+F 1 "LED" H 2643 4536 50  0000 C CNN
+F 2 "" H 2650 4700 50  0001 C CNN
+F 3 "~" H 2650 4700 50  0001 C CNN
+	1    2650 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB830BE
+P 3700 4100
+AR Path="/5FB830BE" Ref="R?"  Part="1" 
+AR Path="/5FB7A269/5FB830BE" Ref="R8"  Part="1" 
+F 0 "R8" V 3493 4100 50  0000 C CNN
+F 1 "220" V 3584 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3630 4100 50  0001 C CNN
+F 3 "~" H 3700 4100 50  0001 C CNN
+	1    3700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB830C4
+P 3350 4100
+AR Path="/5FB830C4" Ref="R?"  Part="1" 
+AR Path="/5FB7A269/5FB830C4" Ref="R7"  Part="1" 
+F 0 "R7" V 3143 4100 50  0000 C CNN
+F 1 "220" V 3234 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3280 4100 50  0001 C CNN
+F 3 "~" H 3350 4100 50  0001 C CNN
+	1    3350 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB830CA
+P 3000 4100
+AR Path="/5FB830CA" Ref="R?"  Part="1" 
+AR Path="/5FB7A269/5FB830CA" Ref="R6"  Part="1" 
+F 0 "R6" V 2793 4100 50  0000 C CNN
+F 1 "220" V 2884 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2930 4100 50  0001 C CNN
+F 3 "~" H 3000 4100 50  0001 C CNN
+	1    3000 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB830D0
+P 2650 4100
+AR Path="/5FB830D0" Ref="R?"  Part="1" 
+AR Path="/5FB7A269/5FB830D0" Ref="R5"  Part="1" 
+F 0 "R5" V 2443 4100 50  0000 C CNN
+F 1 "220" V 2534 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2580 4100 50  0001 C CNN
+F 3 "~" H 2650 4100 50  0001 C CNN
+	1    2650 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5FB830D6
+P 3700 5150
+F 0 "#PWR0113" H 3700 4900 50  0001 C CNN
+F 1 "GND" V 3705 5022 50  0000 R CNN
+F 2 "" H 3700 5150 50  0001 C CNN
+F 3 "" H 3700 5150 50  0001 C CNN
+	1    3700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5FB830DC
+P 3350 5100
+F 0 "#PWR0114" H 3350 4850 50  0001 C CNN
+F 1 "GND" V 3355 4972 50  0000 R CNN
+F 2 "" H 3350 5100 50  0001 C CNN
+F 3 "" H 3350 5100 50  0001 C CNN
+	1    3350 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5FB830E2
+P 3000 5100
+F 0 "#PWR0115" H 3000 4850 50  0001 C CNN
+F 1 "GND" V 3005 4972 50  0000 R CNN
+F 2 "" H 3000 5100 50  0001 C CNN
+F 3 "" H 3000 5100 50  0001 C CNN
+	1    3000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5FB830E8
+P 2650 5100
+F 0 "#PWR0116" H 2650 4850 50  0001 C CNN
+F 1 "GND" V 2655 4972 50  0000 R CNN
+F 2 "" H 2650 5100 50  0001 C CNN
+F 3 "" H 2650 5100 50  0001 C CNN
+	1    2650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2900 3700 3950
+Wire Wire Line
+	3700 4250 3700 4550
+Wire Wire Line
+	3700 4850 3700 5150
+Wire Wire Line
+	3350 2900 3350 3950
+Wire Wire Line
+	3350 4250 3350 4550
+Wire Wire Line
+	3350 4850 3350 5100
+Wire Wire Line
+	3000 2900 3000 3950
+Wire Wire Line
+	3000 4250 3000 4550
+Wire Wire Line
+	3000 4850 3000 5100
+Wire Wire Line
+	2650 2900 2650 3950
+Wire Wire Line
+	2650 4250 2650 4550
+Wire Wire Line
+	2650 4850 2650 5100
+Text HLabel 8650 4400 2    50   Input ~ 0
+ESP_Shutdown
+Text HLabel 6150 4150 0    50   Input ~ 0
+SW_ON
+Text HLabel 3700 2900 1    50   Input ~ 0
+LED_R
+Text HLabel 3350 2900 1    50   Input ~ 0
+LED_G
+Text HLabel 3000 2900 1    50   Input ~ 0
+LED_B
+Text HLabel 2650 2900 1    50   Input ~ 0
+LED_Y
+$EndSCHEMATC
