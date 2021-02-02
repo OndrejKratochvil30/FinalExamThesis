@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 9500 1000 1100 850 
+U 60188778
+F0 "Napajeni" 50
+F1 "Napajeni.sch" 50
+F2 "SW_ON" I L 9500 1150 50 
+F3 "SW_OFF" I L 9500 1450 50 
+$EndSheet
+$Sheet
+S 9500 2350 1000 750 
+U 601BF914
+F0 "Krokovka1" 50
+F1 "Krokovka1.sch" 50
+F2 "EN1" I L 9500 2500 50 
+F3 "PDN_1" I L 9500 2600 50 
+F4 "STEP1" I L 9500 2750 50 
+F5 "DIR1" I L 9500 2850 50 
+$EndSheet
+$Sheet
+S 9500 3500 800  700 
+U 601E7BA1
+F0 "Krokovka2" 50
+F1 "Krokovka2.sch" 50
+F2 "EN2" I L 9500 3600 50 
+F3 "PDN_2" I L 9500 3750 50 
+F4 "STEP2" I L 9500 3950 50 
+F5 "DIR2" I L 9500 4100 50 
+$EndSheet
+$Sheet
+S 9500 4600 800  700 
+U 60210E5F
+F0 "Krokovka3" 50
+F1 "Krokovka3.sch" 50
+F2 "EN3" I L 9500 4750 50 
+F3 "PDN_3" I L 9500 4900 50 
+F4 "STEP3" I L 9500 5050 50 
+F5 "DIR3" I L 9500 5200 50 
+$EndSheet
+$Sheet
+S 9500 5650 800  650 
+U 60218F69
+F0 "Krokovka 4" 50
+F1 "Krokovka 4.sch" 50
+F2 "EN4" I L 9500 5750 50 
+F3 "PDN_4" I L 9500 5850 50 
+F4 "STEP4" I L 9500 6000 50 
+F5 "DIR4" I L 9500 6150 50 
+$EndSheet
+$Comp
+L Device:R R6
+U 1 1 602202EC
+P 3900 2600
+F 0 "R6" V 3693 2600 50  0000 C CNN
+F 1 "1k" V 3784 2600 50  0000 C CNN
+F 2 "" V 3830 2600 50  0001 C CNN
+F 3 "~" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 2700 4050 2600
+Wire Wire Line
+	9500 2600 4300 2600
+Wire Wire Line
+	9500 3750 4300 3750
+Wire Wire Line
+	9500 4900 4300 4900
+Wire Wire Line
+	4300 4900 4300 3750
+Connection ~ 4300 3750
+Wire Wire Line
+	9500 5850 4300 5850
+Wire Wire Line
+	4300 5850 4300 4900
+Connection ~ 4300 4900
+Wire Wire Line
+	9500 1150 3700 1150
+Wire Wire Line
+	3700 1150 3700 2000
+Wire Wire Line
+	3800 2100 3800 1450
+Wire Wire Line
+	3800 1450 9500 1450
+Wire Wire Line
+	5950 2200 5950 2500
+Wire Wire Line
+	5950 2500 9500 2500
+Wire Wire Line
+	9500 3600 5950 3600
+Wire Wire Line
+	5950 3600 5950 2500
+Connection ~ 5950 2500
+Wire Wire Line
+	9500 4750 5950 4750
+Wire Wire Line
+	5950 4750 5950 3600
+Connection ~ 5950 3600
+Connection ~ 5950 4750
+Wire Wire Line
+	9500 2750 4650 2750
+Wire Wire Line
+	4650 2750 4650 2300
+Wire Wire Line
+	9500 2850 4400 2850
+Wire Wire Line
+	4400 2850 4400 2500
+Wire Wire Line
+	9500 3950 4150 3950
+Wire Wire Line
+	4150 3950 4150 2800
+Wire Wire Line
+	9500 4100 4050 4100
+Wire Wire Line
+	4050 4100 4050 2900
+Wire Wire Line
+	9500 5050 3950 5050
+Wire Wire Line
+	3950 5050 3950 3000
+Wire Wire Line
+	9500 5200 3850 5200
+Wire Wire Line
+	3850 5200 3850 3100
+Wire Wire Line
+	9500 6000 3750 6000
+Wire Wire Line
+	3750 6000 3750 3200
+Wire Wire Line
+	9500 6150 3650 6150
+Wire Wire Line
+	3650 6150 3650 3300
+NoConn ~ 2350 1900
+NoConn ~ 2350 1800
+Wire Wire Line
+	3750 3200 3550 3200
+Wire Wire Line
+	3850 3100 3550 3100
+NoConn ~ 3550 1700
+NoConn ~ 3550 1900
+Wire Wire Line
+	3950 3000 3550 3000
+Wire Wire Line
+	4050 2900 3550 2900
+Wire Wire Line
+	4150 2800 3550 2800
+NoConn ~ 2350 1600
+Wire Wire Line
+	3550 2100 3800 2100
+Wire Wire Line
+	3550 2700 4050 2700
+Wire Wire Line
+	3550 2600 3750 2600
+Wire Wire Line
+	3700 2000 3550 2000
+NoConn ~ 3550 1600
+NoConn ~ 3550 1800
+Wire Wire Line
+	4400 2500 3550 2500
+NoConn ~ 2350 2900
+NoConn ~ 2350 2800
+NoConn ~ 2350 3200
+NoConn ~ 2350 3300
+NoConn ~ 2350 3100
+NoConn ~ 2350 3000
+Wire Wire Line
+	4650 2300 3550 2300
+Wire Wire Line
+	3550 2200 5950 2200
+NoConn ~ 3550 2400
+NoConn ~ 3550 3500
+NoConn ~ 3550 3400
+Wire Wire Line
+	3650 3300 3550 3300
+$Comp
+L power:GND #PWR02
+U 1 1 60188172
+P 2950 4200
+F 0 "#PWR02" H 2950 3950 50  0001 C CNN
+F 1 "GND" H 2955 4027 50  0000 C CNN
+F 2 "" H 2950 4200 50  0001 C CNN
+F 3 "" H 2950 4200 50  0001 C CNN
+	1    2950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 60185E1C
+P 2950 2800
+F 0 "U1" H 2950 4381 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 2950 4290 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 2950 1300 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 2650 2850 50  0001 C CNN
+	1    2950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0112
+U 1 1 6024E04F
+P 2950 1000
+F 0 "#PWR0112" H 2950 850 50  0001 C CNN
+F 1 "VCC" H 2965 1173 50  0000 C CNN
+F 2 "" H 2950 1000 50  0001 C CNN
+F 3 "" H 2950 1000 50  0001 C CNN
+	1    2950 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1400 2950 1000
+Wire Wire Line
+	5950 5750 5950 4750
+Wire Wire Line
+	9500 5750 5950 5750
+Wire Wire Line
+	4300 2600 4300 3750
+Wire Wire Line
+	4050 2600 4300 2600
+Connection ~ 4050 2600
+Connection ~ 4300 2600
+NoConn ~ 3550 3600
+NoConn ~ 3550 3700
+NoConn ~ 3550 3800
+NoConn ~ 3550 3900
+$EndSCHEMATC

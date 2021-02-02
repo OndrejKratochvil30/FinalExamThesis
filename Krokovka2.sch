@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1300 4000 1700 4000
+Wire Wire Line
+	1300 4100 1700 4100
+Wire Wire Line
+	1700 4200 1300 4200
+Wire Wire Line
+	1300 4300 1700 4300
+Wire Wire Line
+	1700 4400 1300 4400
+Wire Wire Line
+	1300 4500 1700 4500
+Wire Wire Line
+	1700 4600 1300 4600
+Wire Wire Line
+	1300 4700 1700 4700
+Text Label 1350 4000 0    50   ~ 0
+EN
+Text Label 1350 4100 0    50   ~ 0
+MS1
+Text Label 1350 4200 0    50   ~ 0
+MS2
+Text Label 1350 4300 0    50   ~ 0
+SPREAD
+Text Label 1350 4400 0    50   ~ 0
+PDN_UART
+Text Label 1350 4500 0    50   ~ 0
+PDN_UART2
+Text Label 1350 4600 0    50   ~ 0
+STEP
+Text Label 1350 4700 0    50   ~ 0
+DIR
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 6020C1B3
+P 1900 4300
+AR Path="/601BF914/6020C1B3" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6020C1B3" Ref="J8"  Part="1" 
+F 0 "J8" H 1928 4276 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 1928 4185 50  0000 L CNN
+F 2 "" H 1900 4300 50  0001 C CNN
+F 3 "~" H 1900 4300 50  0001 C CNN
+	1    1900 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3750 1950 3250
+Wire Wire Line
+	2050 3750 2050 3250
+Wire Wire Line
+	2150 3750 2150 3250
+Text Label 2550 4000 0    50   ~ 0
+VM
+Wire Wire Line
+	2500 4700 2950 4700
+Wire Wire Line
+	2500 4600 2950 4600
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 6020C1C0
+P 2300 4300
+AR Path="/601BF914/6020C1C0" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6020C1C0" Ref="J13"  Part="1" 
+F 0 "J13" H 2192 4785 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 2192 4694 50  0000 C CNN
+F 2 "" H 2300 4300 50  0001 C CNN
+F 3 "~" H 2300 4300 50  0001 C CNN
+	1    2300 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4100 2950 4100
+Text Label 2550 4100 0    50   ~ 0
+GND
+Text Label 2550 4200 0    50   ~ 0
+M2B
+Text Label 2550 4300 0    50   ~ 0
+M2A
+Text Label 2550 4400 0    50   ~ 0
+M1A
+Text Label 2550 4500 0    50   ~ 0
+M1B
+Text Label 2550 4600 0    50   ~ 0
+VIO
+Text Label 2550 4700 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01_Female J?
+U 1 1 6020C1CE
+P 1950 3950
+AR Path="/601BF914/6020C1CE" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6020C1CE" Ref="J10"  Part="1" 
+F 0 "J10" V 1796 3998 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 1887 3998 50  0000 L CNN
+F 2 "" H 1950 3950 50  0001 C CNN
+F 3 "~" H 1950 3950 50  0001 C CNN
+	1    1950 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6020C1D4
+P 2150 3950
+AR Path="/601BF914/6020C1D4" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6020C1D4" Ref="J12"  Part="1" 
+F 0 "J12" V 1996 3998 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 2087 3998 50  0000 L CNN
+F 2 "" H 2150 3950 50  0001 C CNN
+F 3 "~" H 2150 3950 50  0001 C CNN
+	1    2150 3950
+	0    1    1    0   
+$EndComp
+Text Label 1950 3750 1    50   ~ 0
+VREF
+Text Label 2050 3750 1    50   ~ 0
+DIAG
+Text Label 2150 3750 1    50   ~ 0
+INDEX
+$Comp
+L Device:C C?
+U 1 1 6020C1DD
+P 3350 5050
+AR Path="/601BF914/6020C1DD" Ref="C?"  Part="1" 
+AR Path="/601E7BA1/6020C1DD" Ref="C6"  Part="1" 
+F 0 "C6" H 3465 5096 50  0000 L CNN
+F 1 "470pF" H 3465 5005 50  0000 L CNN
+F 2 "" H 3388 4900 50  0001 C CNN
+F 3 "~" H 3350 5050 50  0001 C CNN
+	1    3350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6020C1E3
+P 4050 5050
+AR Path="/601BF914/6020C1E3" Ref="C?"  Part="1" 
+AR Path="/601E7BA1/6020C1E3" Ref="C8"  Part="1" 
+F 0 "C8" H 4165 5096 50  0000 L CNN
+F 1 "470pF" H 4165 5005 50  0000 L CNN
+F 2 "" H 4088 4900 50  0001 C CNN
+F 3 "~" H 4050 5050 50  0001 C CNN
+	1    4050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6020C1E9
+P 4400 5050
+AR Path="/601BF914/6020C1E9" Ref="C?"  Part="1" 
+AR Path="/601E7BA1/6020C1E9" Ref="C9"  Part="1" 
+F 0 "C9" H 4515 5096 50  0000 L CNN
+F 1 "470pF" H 4515 5005 50  0000 L CNN
+F 2 "" H 4438 4900 50  0001 C CNN
+F 3 "~" H 4400 5050 50  0001 C CNN
+	1    4400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 6020C1EF
+P 4700 4400
+AR Path="/601BF914/6020C1EF" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6020C1EF" Ref="J14"  Part="1" 
+F 0 "J14" H 4672 4282 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 4672 4373 50  0000 R CNN
+F 2 "" H 4700 4400 50  0001 C CNN
+F 3 "~" H 4700 4400 50  0001 C CNN
+	1    4700 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 4500 3350 4500
+Wire Wire Line
+	2500 4400 3700 4400
+Wire Wire Line
+	2500 4300 4050 4300
+Wire Wire Line
+	2500 4200 4400 4200
+Wire Wire Line
+	3350 4900 3350 4500
+Connection ~ 3350 4500
+Wire Wire Line
+	3350 4500 4500 4500
+Connection ~ 3700 4400
+Wire Wire Line
+	3700 4400 4500 4400
+Wire Wire Line
+	4050 4900 4050 4300
+Connection ~ 4050 4300
+Wire Wire Line
+	4050 4300 4500 4300
+Wire Wire Line
+	4400 4900 4400 4200
+Connection ~ 4400 4200
+Wire Wire Line
+	4400 4200 4500 4200
+$Comp
+L power:GND #PWR?
+U 1 1 6020C204
+P 2950 5000
+AR Path="/601BF914/6020C204" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/6020C204" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 2950 4750 50  0001 C CNN
+F 1 "GND" H 2955 4827 50  0000 C CNN
+F 2 "" H 2950 5000 50  0001 C CNN
+F 3 "" H 2950 5000 50  0001 C CNN
+	1    2950 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4700 2950 5000
+$Comp
+L power:GND #PWR?
+U 1 1 6020C20B
+P 3350 5300
+AR Path="/601BF914/6020C20B" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/6020C20B" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 3350 5050 50  0001 C CNN
+F 1 "GND" H 3355 5127 50  0000 C CNN
+F 2 "" H 3350 5300 50  0001 C CNN
+F 3 "" H 3350 5300 50  0001 C CNN
+	1    3350 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6020C211
+P 3700 5300
+AR Path="/601BF914/6020C211" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/6020C211" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 3700 5050 50  0001 C CNN
+F 1 "GND" H 3705 5127 50  0000 C CNN
+F 2 "" H 3700 5300 50  0001 C CNN
+F 3 "" H 3700 5300 50  0001 C CNN
+	1    3700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6020C217
+P 4050 5300
+AR Path="/601BF914/6020C217" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/6020C217" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 4050 5050 50  0001 C CNN
+F 1 "GND" H 4055 5127 50  0000 C CNN
+F 2 "" H 4050 5300 50  0001 C CNN
+F 3 "" H 4050 5300 50  0001 C CNN
+	1    4050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6020C21D
+P 4400 5300
+AR Path="/601BF914/6020C21D" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/6020C21D" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 4400 5050 50  0001 C CNN
+F 1 "GND" H 4405 5127 50  0000 C CNN
+F 2 "" H 4400 5300 50  0001 C CNN
+F 3 "" H 4400 5300 50  0001 C CNN
+	1    4400 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5200 3350 5300
+Wire Wire Line
+	4050 5200 4050 5300
+Wire Wire Line
+	4400 5200 4400 5300
+Wire Wire Line
+	3700 5200 3700 5300
+Wire Wire Line
+	3700 4900 3700 4400
+$Comp
+L Device:C C?
+U 1 1 6020C228
+P 3700 5050
+AR Path="/601BF914/6020C228" Ref="C?"  Part="1" 
+AR Path="/601E7BA1/6020C228" Ref="C7"  Part="1" 
+F 0 "C7" H 3815 5096 50  0000 L CNN
+F 1 "470pF" H 3815 5005 50  0000 L CNN
+F 2 "" H 3738 4900 50  0001 C CNN
+F 3 "~" H 3700 5050 50  0001 C CNN
+	1    3700 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 1300 4000 0    50   Input ~ 0
+EN2
+Text HLabel 1300 4400 0    50   Input ~ 0
+PDN_2
+Text HLabel 1300 4600 0    50   Input ~ 0
+STEP2
+Text HLabel 1300 4700 0    50   Input ~ 0
+DIR2
+NoConn ~ 1300 4500
+$Comp
+L power:GND #PWR?
+U 1 1 6020C23F
+P 2950 4100
+AR Path="/601BF914/6020C23F" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/6020C23F" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 2950 3850 50  0001 C CNN
+F 1 "GND" V 2955 3972 50  0000 R CNN
+F 2 "" H 2950 4100 50  0001 C CNN
+F 3 "" H 2950 4100 50  0001 C CNN
+	1    2950 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J?
+U 1 1 6020C245
+P 1950 3050
+AR Path="/601BF914/6020C245" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6020C245" Ref="J9"  Part="1" 
+F 0 "J9" V 1888 2962 50  0000 R CNN
+F 1 "Conn_01x01_Female" V 1797 2962 50  0000 R CNN
+F 2 "" H 1950 3050 50  0001 C CNN
+F 3 "~" H 1950 3050 50  0001 C CNN
+	1    1950 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6020C24B
+P 2050 3050
+AR Path="/601BF914/6020C24B" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6020C24B" Ref="J11"  Part="1" 
+F 0 "J11" V 1988 2862 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 1897 2862 50  0000 R CNN
+F 2 "" H 2050 3050 50  0001 C CNN
+F 3 "~" H 2050 3050 50  0001 C CNN
+	1    2050 3050
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2950 4600
+NoConn ~ 1300 4300
+$Comp
+L power:VCC #PWR?
+U 1 1 60243DD1
+P 2650 4000
+AR Path="/601BF914/60243DD1" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/60243DD1" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 2650 3850 50  0001 C CNN
+F 1 "VCC" V 2665 4127 50  0000 L CNN
+F 2 "" H 2650 4000 50  0001 C CNN
+F 3 "" H 2650 4000 50  0001 C CNN
+	1    2650 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 4000 2650 4000
+$Comp
+L power:VCC #PWR?
+U 1 1 601D4B39
+P 1300 4100
+AR Path="/601BF914/601D4B39" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/601D4B39" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1300 3950 50  0001 C CNN
+F 1 "VCC" V 1315 4227 50  0000 L CNN
+F 2 "" H 1300 4100 50  0001 C CNN
+F 3 "" H 1300 4100 50  0001 C CNN
+	1    1300 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601D4D21
+P 1300 4200
+AR Path="/601BF914/601D4D21" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/601D4D21" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1300 3950 50  0001 C CNN
+F 1 "GND" V 1305 4072 50  0000 R CNN
+F 2 "" H 1300 4200 50  0001 C CNN
+F 3 "" H 1300 4200 50  0001 C CNN
+	1    1300 4200
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
