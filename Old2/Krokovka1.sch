@@ -35,8 +35,12 @@ Text Label 6800 2250 0    50   ~ 0
 MS1
 Text Label 6800 2350 0    50   ~ 0
 MS2
+Text Label 6800 2450 0    50   ~ 0
+SPREAD
 Text Label 6800 2550 0    50   ~ 0
 PDN_UART
+Text Label 6800 2650 0    50   ~ 0
+PDN_UART2
 Text Label 6800 2750 0    50   ~ 0
 STEP
 Text Label 6800 2850 0    50   ~ 0
@@ -45,8 +49,8 @@ $Comp
 L Connector:Conn_01x08_Female J1
 U 1 1 601DE4AA
 P 7350 2450
-F 0 "J1" V 7500 2400 50  0000 L CNN
-F 1 "Conn_01x08_Female" V 7400 2000 50  0000 L CNN
+F 0 "J1" H 7378 2426 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 7378 2335 50  0000 L CNN
 F 2 "" H 7350 2450 50  0001 C CNN
 F 3 "~" H 7350 2450 50  0001 C CNN
 	1    7350 2450
@@ -70,8 +74,8 @@ $Comp
 L Connector:Conn_01x08_Female J4
 U 1 1 601DF0C1
 P 7750 2450
-F 0 "J4" V 7900 2450 50  0000 C CNN
-F 1 "Conn_01x08_Female" V 7800 2400 50  0000 C CNN
+F 0 "J4" H 7642 2935 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 7642 2844 50  0000 C CNN
 F 2 "" H 7750 2450 50  0001 C CNN
 F 3 "~" H 7750 2450 50  0001 C CNN
 	1    7750 2450
@@ -82,23 +86,23 @@ Wire Wire Line
 Text Label 8000 2250 0    50   ~ 0
 GND
 Text Label 8000 2350 0    50   ~ 0
-A2
+M2B
 Text Label 8000 2450 0    50   ~ 0
-A1
+M2A
 Text Label 8000 2550 0    50   ~ 0
-B1
+M1A
 Text Label 8000 2650 0    50   ~ 0
-B2
+M1B
 Text Label 8000 2750 0    50   ~ 0
-VDD
+VIO
 Text Label 8000 2850 0    50   ~ 0
 GND
 $Comp
 L Connector:Conn_01x01_Female J2
 U 1 1 601E441F
 P 7400 2100
-F 0 "J2" H 7300 2050 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6650 1950 50  0000 L CNN
+F 0 "J2" V 7246 2148 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 7337 2148 50  0000 L CNN
 F 2 "" H 7400 2100 50  0001 C CNN
 F 3 "~" H 7400 2100 50  0001 C CNN
 	1    7400 2100
@@ -108,8 +112,8 @@ $Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 601E4DDF
 P 7600 2100
-F 0 "J3" V 7650 2050 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 6800 2200 50  0000 L CNN
+F 0 "J3" V 7446 2148 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 7537 2148 50  0000 L CNN
 F 2 "" H 7600 2100 50  0001 C CNN
 F 3 "~" H 7600 2100 50  0001 C CNN
 	1    7600 2100
@@ -251,6 +255,41 @@ F 3 "" H 8400 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 601F7B65
+P 7400 1200
+F 0 "J5" V 7338 1112 50  0000 R CNN
+F 1 "Conn_01x01_Female" V 7247 1112 50  0000 R CNN
+F 2 "" H 7400 1200 50  0001 C CNN
+F 3 "~" H 7400 1200 50  0001 C CNN
+	1    7400 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J6
+U 1 1 601F871E
+P 7500 1200
+F 0 "J6" V 7438 1012 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 7347 1012 50  0000 R CNN
+F 2 "" H 7500 1200 50  0001 C CNN
+F 3 "~" H 7500 1200 50  0001 C CNN
+	1    7500 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR015
+U 1 1 601F8F0A
+P 8400 2150
+F 0 "#PWR015" H 8400 2000 50  0001 C CNN
+F 1 "VCC" H 8415 2323 50  0000 C CNN
+F 2 "" H 8400 2150 50  0001 C CNN
+F 3 "" H 8400 2150 50  0001 C CNN
+	1    8400 2150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8400 2750
+NoConn ~ 6750 2450
+$Comp
 L power:GND #PWR0109
 U 1 1 60244E14
 P 9150 3450
@@ -311,36 +350,4 @@ F 3 "" H 6750 2250 50  0001 C CNN
 	1    6750 2250
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 6019CC49
-P 8400 2750
-F 0 "#PWR?" H 8400 2600 50  0001 C CNN
-F 1 "+3V3" V 8415 2878 50  0000 L CNN
-F 2 "" H 8400 2750 50  0001 C CNN
-F 3 "" H 8400 2750 50  0001 C CNN
-	1    8400 2750
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+10V #PWR?
-U 1 1 6019DD6B
-P 8400 2150
-F 0 "#PWR?" H 8400 2000 50  0001 C CNN
-F 1 "+10V" V 8415 2278 50  0000 L CNN
-F 2 "" H 8400 2150 50  0001 C CNN
-F 3 "" H 8400 2150 50  0001 C CNN
-	1    8400 2150
-	0    1    1    0   
-$EndComp
-NoConn ~ 7400 1400
-NoConn ~ 7500 1400
-Text HLabel 7600 1400 1    50   Input ~ 0
-INDEX_1
-Text Label 6800 2450 0    50   ~ 0
-PDN_UART
-Text Label 6800 2650 0    50   ~ 0
-CLK
-Wire Wire Line
-	6750 2550 6750 2450
 $EndSCHEMATC

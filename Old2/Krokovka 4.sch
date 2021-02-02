@@ -36,11 +36,11 @@ MS1
 Text Label 4050 3450 0    50   ~ 0
 MS2
 Text Label 4050 3550 0    50   ~ 0
-PDN_UART
+SPREAD
 Text Label 4050 3650 0    50   ~ 0
 PDN_UART
 Text Label 4050 3750 0    50   ~ 0
-CLK
+PDN_UART2
 Text Label 4050 3850 0    50   ~ 0
 STEP
 Text Label 4050 3950 0    50   ~ 0
@@ -53,8 +53,8 @@ AR Path="/601BF914/6021D341" Ref="J?"  Part="1"
 AR Path="/601E7BA1/6021D341" Ref="J?"  Part="1" 
 AR Path="/60210E5F/6021D341" Ref="J?"  Part="1" 
 AR Path="/60218F69/6021D341" Ref="J22"  Part="1" 
-F 0 "J22" V 4700 3500 50  0000 L CNN
-F 1 "Conn_01x08_Female" V 4650 3100 50  0000 L CNN
+F 0 "J22" H 4628 3526 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 4628 3435 50  0000 L CNN
 F 2 "" H 4600 3550 50  0001 C CNN
 F 3 "~" H 4600 3550 50  0001 C CNN
 	1    4600 3550
@@ -82,8 +82,8 @@ AR Path="/601BF914/6021D34E" Ref="J?"  Part="1"
 AR Path="/601E7BA1/6021D34E" Ref="J?"  Part="1" 
 AR Path="/60210E5F/6021D34E" Ref="J?"  Part="1" 
 AR Path="/60218F69/6021D34E" Ref="J27"  Part="1" 
-F 0 "J27" V 5100 3550 50  0000 C CNN
-F 1 "Conn_01x08_Female" V 5050 3450 50  0000 C CNN
+F 0 "J27" H 4892 4035 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 4892 3944 50  0000 C CNN
 F 2 "" H 5000 3550 50  0001 C CNN
 F 3 "~" H 5000 3550 50  0001 C CNN
 	1    5000 3550
@@ -94,15 +94,15 @@ Wire Wire Line
 Text Label 5250 3350 0    50   ~ 0
 GND
 Text Label 5250 3450 0    50   ~ 0
-A2
+M2B
 Text Label 5250 3550 0    50   ~ 0
-A1
+M2A
 Text Label 5250 3650 0    50   ~ 0
-B1
+M1A
 Text Label 5250 3750 0    50   ~ 0
-B2
+M1B
 Text Label 5250 3850 0    50   ~ 0
-VDD
+VIO
 Text Label 5250 3950 0    50   ~ 0
 GND
 $Comp
@@ -113,8 +113,8 @@ AR Path="/601BF914/6021D35C" Ref="J?"  Part="1"
 AR Path="/601E7BA1/6021D35C" Ref="J?"  Part="1" 
 AR Path="/60210E5F/6021D35C" Ref="J?"  Part="1" 
 AR Path="/60218F69/6021D35C" Ref="J24"  Part="1" 
-F 0 "J24" H 4450 3050 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 3900 3100 50  0000 L CNN
+F 0 "J24" V 4496 3248 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 4587 3248 50  0000 L CNN
 F 2 "" H 4650 3200 50  0001 C CNN
 F 3 "~" H 4650 3200 50  0001 C CNN
 	1    4650 3200
@@ -128,8 +128,8 @@ AR Path="/601BF914/6021D362" Ref="J?"  Part="1"
 AR Path="/601E7BA1/6021D362" Ref="J?"  Part="1" 
 AR Path="/60210E5F/6021D362" Ref="J?"  Part="1" 
 AR Path="/60218F69/6021D362" Ref="J26"  Part="1" 
-F 0 "J26" V 4900 3150 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 4100 3300 50  0000 L CNN
+F 0 "J26" V 4696 3248 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 4787 3248 50  0000 L CNN
 F 2 "" H 4850 3200 50  0001 C CNN
 F 3 "~" H 4850 3200 50  0001 C CNN
 	1    4850 3200
@@ -336,6 +336,38 @@ F 3 "" H 5650 3350 50  0001 C CNN
 	1    5650 3350
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector:Conn_01x01_Female J?
+U 1 1 6021D3D3
+P 4650 2300
+AR Path="/601BF914/6021D3D3" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6021D3D3" Ref="J?"  Part="1" 
+AR Path="/60210E5F/6021D3D3" Ref="J?"  Part="1" 
+AR Path="/60218F69/6021D3D3" Ref="J23"  Part="1" 
+F 0 "J23" V 4588 2212 50  0000 R CNN
+F 1 "Conn_01x01_Female" V 4497 2212 50  0000 R CNN
+F 2 "" H 4650 2300 50  0001 C CNN
+F 3 "~" H 4650 2300 50  0001 C CNN
+	1    4650 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6021D3D9
+P 4750 2300
+AR Path="/601BF914/6021D3D9" Ref="J?"  Part="1" 
+AR Path="/601E7BA1/6021D3D9" Ref="J?"  Part="1" 
+AR Path="/60210E5F/6021D3D9" Ref="J?"  Part="1" 
+AR Path="/60218F69/6021D3D9" Ref="J25"  Part="1" 
+F 0 "J25" V 4688 2112 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 4597 2112 50  0000 R CNN
+F 2 "" H 4750 2300 50  0001 C CNN
+F 3 "~" H 4750 2300 50  0001 C CNN
+	1    4750 2300
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5650 3850
+NoConn ~ 4000 3550
 Wire Wire Line
 	4000 3350 4000 3400
 $Comp
@@ -357,6 +389,21 @@ Connection ~ 4000 3400
 Wire Wire Line
 	4000 3400 4000 3450
 $Comp
+L power:VCC #PWR?
+U 1 1 602417E1
+P 5650 3250
+AR Path="/601BF914/602417E1" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/602417E1" Ref="#PWR?"  Part="1" 
+AR Path="/60210E5F/602417E1" Ref="#PWR?"  Part="1" 
+AR Path="/60218F69/602417E1" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 5650 3100 50  0001 C CNN
+F 1 "VCC" V 5665 3378 50  0000 L CNN
+F 2 "" H 5650 3250 50  0001 C CNN
+F 3 "" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	0    1    1    0   
+$EndComp
+$Comp
 L power:GND #PWR?
 U 1 1 60251790
 P 7100 4550
@@ -373,32 +420,4 @@ F 3 "" H 7100 4550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 4550 7100 4450
-Wire Wire Line
-	4000 3650 4000 3550
-Text HLabel 4850 2500 1    50   Input ~ 0
-INDEX_4
-NoConn ~ 4650 2500
-NoConn ~ 4750 2500
-$Comp
-L power:+10V #PWR?
-U 1 1 601B9CD6
-P 5650 3250
-F 0 "#PWR?" H 5650 3100 50  0001 C CNN
-F 1 "+10V" V 5665 3378 50  0000 L CNN
-F 2 "" H 5650 3250 50  0001 C CNN
-F 3 "" H 5650 3250 50  0001 C CNN
-	1    5650 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 601BA865
-P 5650 3850
-F 0 "#PWR?" H 5650 3700 50  0001 C CNN
-F 1 "+3V3" V 5665 3978 50  0000 L CNN
-F 2 "" H 5650 3850 50  0001 C CNN
-F 3 "" H 5650 3850 50  0001 C CNN
-	1    5650 3850
-	0    1    1    0   
-$EndComp
 $EndSCHEMATC
