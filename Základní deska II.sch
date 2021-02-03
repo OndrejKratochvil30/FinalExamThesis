@@ -215,8 +215,6 @@ Wire Wire Line
 Wire Wire Line
 	1050 2500 1850 2500
 Wire Wire Line
-	3450 2100 5650 2100
-Wire Wire Line
 	5800 2750 5800 2200
 Wire Wire Line
 	5800 2200 3450 2200
@@ -307,31 +305,9 @@ Wire Wire Line
 	1700 3200 1700 3950
 Wire Wire Line
 	1700 3950 4550 3950
-$Comp
-L Transistor_FET:BS250 Q?
-U 1 1 60292C4A
-P 5850 2100
-AR Path="/60188778/60292C4A" Ref="Q?"  Part="1" 
-AR Path="/60292C4A" Ref="Q?"  Part="1" 
-F 0 "Q?" V 6192 2100 50  0000 C CNN
-F 1 "BS250" V 6101 2100 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6050 2025 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 5850 2100 50  0001 L CNN
-	1    5850 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 2300 5950 2500
-$Comp
-L power:GND #PWR?
-U 1 1 602988D6
-P 5950 1900
-F 0 "#PWR?" H 5950 1650 50  0001 C CNN
-F 1 "GND" H 5955 1727 50  0000 C CNN
-F 2 "" H 5950 1900 50  0001 C CNN
-F 3 "" H 5950 1900 50  0001 C CNN
-	1    5950 1900
-	-1   0    0    1   
-$EndComp
 NoConn ~ 3450 3400
+Wire Wire Line
+	3450 2100 5950 2100
+Wire Wire Line
+	5950 2100 5950 2500
 $EndSCHEMATC
