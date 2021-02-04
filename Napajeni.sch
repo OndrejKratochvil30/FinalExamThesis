@@ -61,17 +61,6 @@ F 3 "" H 7200 3550 50  0001 C CNN
 	1    7200 3550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Transistor_FET:NTR2101P Q5
-U 1 1 601B9875
-P 7300 3100
-F 0 "Q5" V 7500 3050 50  0000 L CNN
-F 1 "NTR2101P" V 7500 2650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7500 3025 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF" H 7300 3100 50  0001 L CNN
-	1    7300 3100
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 3300 7200 3550
 Wire Wire Line
@@ -240,4 +229,15 @@ Wire Wire Line
 	5900 2200 7000 2200
 Wire Wire Line
 	7200 2500 7200 2900
+$Comp
+L Transistor_FET:2N7000 Q2
+U 1 1 60247708
+P 7300 3100
+F 0 "Q2" H 7505 3054 50  0000 L CNN
+F 1 "2N7000" H 7505 3145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7500 3025 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7300 3100 50  0001 L CNN
+	1    7300 3100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
