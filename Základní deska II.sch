@@ -465,7 +465,7 @@ Wire Wire Line
 	5650 2100 5650 2200
 Connection ~ 5950 2100
 Wire Wire Line
-	3450 2200 5650 2200
+	3450 2200 5200 2200
 Wire Wire Line
 	3450 2100 5200 2100
 $Comp
@@ -598,4 +598,33 @@ Text GLabel 9500 5000 0    50   Input ~ 0
 VDD_3
 Text GLabel 9500 5950 0    50   Input ~ 0
 VDD_4
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 6024A163
+P 1850 2000
+F 0 "#FLG02" H 1850 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 2173 50  0000 C CNN
+F 2 "" H 1850 2000 50  0001 C CNN
+F 3 "~" H 1850 2000 50  0001 C CNN
+	1    1850 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 2000
+Text Label 3850 2100 0    50   ~ 0
+Řídí
+$Comp
+L Device:R R?
+U 1 1 6024CA84
+P 5350 2200
+AR Path="/601BF914/6024CA84" Ref="R?"  Part="1" 
+AR Path="/6024CA84" Ref="R4"  Part="1" 
+F 0 "R4" V 5550 2200 50  0000 C CNN
+F 1 "330" V 5450 2200 50  0000 C CNN
+F 2 "" V 5280 2200 50  0001 C CNN
+F 3 "~" H 5350 2200 50  0001 C CNN
+	1    5350 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 2200 5650 2200
 $EndSCHEMATC
