@@ -14,12 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 9500 1000 1100 850 
+S 9500 600  1100 850 
 U 60188778
 F0 "Napajeni" 50
 F1 "Napajeni.sch" 50
-F2 "SW_ON" I L 9500 1150 50 
-F3 "SW_OFF" I L 9500 1450 50 
+F2 "SW_OFF" I L 9500 1050 50 
 $EndSheet
 $Sheet
 S 9500 3500 800  700 
@@ -29,6 +28,7 @@ F1 "Krokovka2.sch" 50
 F2 "EN2" I L 9500 3600 50 
 F3 "PDN_2" I L 9500 3750 50 
 F4 "INDEX_2" I L 9500 3850 50 
+F5 "VDD_2" I L 9500 4000 50 
 $EndSheet
 $Sheet
 S 9500 5650 800  650 
@@ -38,6 +38,7 @@ F1 "Krokovka 4.sch" 50
 F2 "EN4" I L 9500 5750 50 
 F3 "PDN_4" I L 9500 5850 50 
 F4 "INDEX_4" I L 9500 6250 50 
+F5 "VDD_4" I L 9500 5950 50 
 $EndSheet
 $Comp
 L Device:R R6
@@ -50,8 +51,6 @@ F 3 "~" H 3900 3000 50  0001 C CNN
 	1    3900 3000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9500 3750 5650 3750
 Wire Wire Line
 	9500 4900 4300 4900
 Wire Wire Line
@@ -140,17 +139,6 @@ F 3 "" H 1850 3300 50  0001 C CNN
 	1    1850 3300
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x04_Male J5
-U 1 1 60202F96
-P 850 4350
-F 0 "J5" V 700 4300 50  0000 R CNN
-F 1 "Conn_01x04_Male" V 800 4600 50  0000 R CNN
-F 2 "" H 850 4350 50  0001 C CNN
-F 3 "~" H 850 4350 50  0001 C CNN
-	1    850  4350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	750  4150 750  2200
 Wire Wire Line
@@ -181,15 +169,9 @@ Wire Wire Line
 Wire Wire Line
 	1050 2500 1850 2500
 Wire Wire Line
-	3450 2700 5650 2700
-Wire Wire Line
-	5650 2700 5650 3750
-Wire Wire Line
 	3450 2800 5550 2800
 Wire Wire Line
 	5550 2800 5550 3850
-Wire Wire Line
-	4300 3000 4300 4900
 NoConn ~ 3450 3800
 NoConn ~ 3450 3600
 NoConn ~ 3450 3700
@@ -200,26 +182,18 @@ Wire Wire Line
 Wire Wire Line
 	5250 4650 8800 4650
 Wire Wire Line
-	1600 1450 1600 2600
+	1600 1050 1600 2600
 Wire Wire Line
 	1600 2600 1850 2600
 Wire Wire Line
-	1600 1450 9500 1450
-Wire Wire Line
-	1500 1150 1500 2700
+	1600 1050 9500 1050
 Wire Wire Line
 	1500 2700 1850 2700
-Wire Wire Line
-	1500 1150 9500 1150
 NoConn ~ 1850 3700
 NoConn ~ 1850 3600
 NoConn ~ 1850 3500
 Wire Wire Line
 	1850 3400 1750 3400
-Wire Wire Line
-	1750 3400 1750 6250
-Wire Wire Line
-	1750 6250 8800 6250
 NoConn ~ 1850 3800
 Wire Wire Line
 	9500 2950 9100 2950
@@ -232,8 +206,6 @@ Wire Wire Line
 Wire Wire Line
 	1700 3950 4550 3950
 NoConn ~ 3450 3400
-Wire Wire Line
-	3450 2100 5950 2100
 Wire Wire Line
 	5950 2100 5950 2500
 $Comp
@@ -296,6 +268,7 @@ F1 "Krokovka1.sch" 50
 F2 "EN1" I L 9500 2500 50 
 F3 "PDN_1" I L 9500 2600 50 
 F4 "INDEX_1" I L 9500 2950 50 
+F5 "VDD" I L 9500 2750 50 
 $EndSheet
 $Sheet
 S 9500 4600 800  700 
@@ -305,5 +278,324 @@ F1 "Krokovka3.sch" 50
 F2 "EN3" I L 9500 4750 50 
 F3 "PDN_3" I L 9500 4900 50 
 F4 "INDEX_3" I L 9500 4650 50 
+F5 "VDD_3" I L 9500 5000 50 
 $EndSheet
+Wire Wire Line
+	1750 6250 8800 6250
+Wire Wire Line
+	1750 3400 1750 6250
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 601D0D3F
+P 2950 5150
+F 0 "J2" V 2800 5100 50  0000 R CNN
+F 1 "Conn_01x04_Male" V 2900 5400 50  0000 R CNN
+F 2 "" H 2950 5150 50  0001 C CNN
+F 3 "~" H 2950 5150 50  0001 C CNN
+	1    2950 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 601D1657
+P 2050 5350
+F 0 "#PWR06" H 2050 5200 50  0001 C CNN
+F 1 "+3V3" V 2050 5600 50  0000 C CNN
+F 2 "" H 2050 5350 50  0001 C CNN
+F 3 "" H 2050 5350 50  0001 C CNN
+	1    2050 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR07
+U 1 1 601D1E9C
+P 2150 5350
+F 0 "#PWR07" H 2150 5200 50  0001 C CNN
+F 1 "+3V3" V 2150 5600 50  0000 C CNN
+F 2 "" H 2150 5350 50  0001 C CNN
+F 3 "" H 2150 5350 50  0001 C CNN
+	1    2150 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR08
+U 1 1 601D2027
+P 2250 5350
+F 0 "#PWR08" H 2250 5200 50  0001 C CNN
+F 1 "+3V3" V 2250 5600 50  0000 C CNN
+F 2 "" H 2250 5350 50  0001 C CNN
+F 3 "" H 2250 5350 50  0001 C CNN
+	1    2250 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR014
+U 1 1 601D220E
+P 2350 5350
+F 0 "#PWR014" H 2350 5200 50  0001 C CNN
+F 1 "+3V3" V 2350 5600 50  0000 C CNN
+F 2 "" H 2350 5350 50  0001 C CNN
+F 3 "" H 2350 5350 50  0001 C CNN
+	1    2350 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 601D2382
+P 850 4350
+F 0 "J1" V 700 4300 50  0000 R CNN
+F 1 "Conn_01x04_Male" V 800 4600 50  0000 R CNN
+F 2 "" H 850 4350 50  0001 C CNN
+F 3 "~" H 850 4350 50  0001 C CNN
+	1    850  4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 601D3064
+P 2750 5350
+F 0 "#PWR015" H 2750 5100 50  0001 C CNN
+F 1 "GND" V 2750 5100 50  0000 C CNN
+F 2 "" H 2750 5350 50  0001 C CNN
+F 3 "" H 2750 5350 50  0001 C CNN
+	1    2750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 601D3455
+P 2850 5350
+F 0 "#PWR016" H 2850 5100 50  0001 C CNN
+F 1 "GND" V 2850 5100 50  0000 C CNN
+F 2 "" H 2850 5350 50  0001 C CNN
+F 3 "" H 2850 5350 50  0001 C CNN
+	1    2850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 601D3614
+P 2950 5350
+F 0 "#PWR017" H 2950 5100 50  0001 C CNN
+F 1 "GND" V 2950 5100 50  0000 C CNN
+F 2 "" H 2950 5350 50  0001 C CNN
+F 3 "" H 2950 5350 50  0001 C CNN
+	1    2950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 601D3772
+P 3050 5350
+F 0 "#PWR019" H 3050 5100 50  0001 C CNN
+F 1 "GND" V 3050 5100 50  0000 C CNN
+F 2 "" H 3050 5350 50  0001 C CNN
+F 3 "" H 3050 5350 50  0001 C CNN
+	1    3050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 60202F96
+P 2250 5150
+F 0 "J5" V 2100 5100 50  0000 R CNN
+F 1 "Conn_01x04_Male" V 2200 5400 50  0000 R CNN
+F 2 "" H 2250 5150 50  0001 C CNN
+F 3 "~" H 2250 5150 50  0001 C CNN
+	1    2250 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 601E6C8F
+P 5950 1800
+AR Path="/60188778/601E6C8F" Ref="SW?"  Part="1" 
+AR Path="/601BF914/601E6C8F" Ref="SW?"  Part="1" 
+AR Path="/601E6C8F" Ref="SW1"  Part="1" 
+F 0 "SW1" H 5950 2085 50  0000 C CNN
+F 1 "SW_MEC_5G" H 5950 1994 50  0000 C CNN
+F 2 "" H 5950 2000 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 5950 2000 50  0001 C CNN
+	1    5950 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601E6C95
+P 5650 1800
+AR Path="/601BF914/601E6C95" Ref="R?"  Part="1" 
+AR Path="/601E6C95" Ref="R2"  Part="1" 
+F 0 "R2" H 5720 1846 50  0000 L CNN
+F 1 "100k" H 5720 1755 50  0000 L CNN
+F 2 "" V 5580 1800 50  0001 C CNN
+F 3 "~" H 5650 1800 50  0001 C CNN
+	1    5650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2100 5650 2100
+Wire Wire Line
+	5650 2100 5650 1950
+$Comp
+L power:+3V3 #PWR?
+U 1 1 601E6CA4
+P 5650 1550
+AR Path="/601BF914/601E6CA4" Ref="#PWR?"  Part="1" 
+AR Path="/601E6CA4" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 5650 1400 50  0001 C CNN
+F 1 "+3V3" H 5550 1700 50  0000 L CNN
+F 2 "" H 5650 1550 50  0001 C CNN
+F 3 "" H 5650 1550 50  0001 C CNN
+	1    5650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1650 5650 1550
+Wire Wire Line
+	5650 1550 5950 1550
+Wire Wire Line
+	5950 1550 5950 1600
+Connection ~ 5650 1550
+Wire Wire Line
+	5650 2100 5950 2100
+Wire Wire Line
+	5950 2100 5950 2000
+Connection ~ 5650 2100
+Wire Wire Line
+	5650 2100 5650 2200
+Connection ~ 5950 2100
+Wire Wire Line
+	3450 2200 5650 2200
+Wire Wire Line
+	3450 2100 5200 2100
+$Comp
+L Device:R R?
+U 1 1 601E6C9B
+P 5350 2100
+AR Path="/601BF914/601E6C9B" Ref="R?"  Part="1" 
+AR Path="/601E6C9B" Ref="R1"  Part="1" 
+F 0 "R1" V 5143 2100 50  0000 C CNN
+F 1 "1k" V 5234 2100 50  0000 C CNN
+F 2 "" V 5280 2100 50  0001 C CNN
+F 3 "~" H 5350 2100 50  0001 C CNN
+	1    5350 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 601F7428
+P 6300 1800
+AR Path="/60188778/601F7428" Ref="SW?"  Part="1" 
+AR Path="/601BF914/601F7428" Ref="SW?"  Part="1" 
+AR Path="/601F7428" Ref="SW3"  Part="1" 
+F 0 "SW3" H 6300 2085 50  0000 C CNN
+F 1 "SW_MEC_5G" H 6300 1994 50  0000 C CNN
+F 2 "" H 6300 2000 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6300 2000 50  0001 C CNN
+	1    6300 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 601F76BE
+P 6650 1800
+AR Path="/60188778/601F76BE" Ref="SW?"  Part="1" 
+AR Path="/601BF914/601F76BE" Ref="SW?"  Part="1" 
+AR Path="/601F76BE" Ref="SW4"  Part="1" 
+F 0 "SW4" H 6650 2085 50  0000 C CNN
+F 1 "SW_MEC_5G" H 6650 1994 50  0000 C CNN
+F 2 "" H 6650 2000 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6650 2000 50  0001 C CNN
+	1    6650 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 601F78CA
+P 7050 1800
+AR Path="/60188778/601F78CA" Ref="SW?"  Part="1" 
+AR Path="/601BF914/601F78CA" Ref="SW?"  Part="1" 
+AR Path="/601F78CA" Ref="SW5"  Part="1" 
+F 0 "SW5" H 7050 2085 50  0000 C CNN
+F 1 "SW_MEC_5G" H 7050 1994 50  0000 C CNN
+F 2 "" H 7050 2000 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7050 2000 50  0001 C CNN
+	1    7050 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 1550 6300 1550
+Wire Wire Line
+	7050 1550 7050 1600
+Connection ~ 5950 1550
+Wire Wire Line
+	6300 1550 6300 1600
+Connection ~ 6300 1550
+Wire Wire Line
+	6300 1550 6650 1550
+Wire Wire Line
+	6650 1550 6650 1600
+Connection ~ 6650 1550
+Wire Wire Line
+	6650 1550 7050 1550
+Wire Wire Line
+	5950 2100 6300 2100
+Wire Wire Line
+	6300 2100 6300 2000
+Wire Wire Line
+	6300 2100 6650 2100
+Wire Wire Line
+	6650 2100 6650 2000
+Connection ~ 6300 2100
+Wire Wire Line
+	6650 2100 7050 2100
+Wire Wire Line
+	7050 2100 7050 2000
+Connection ~ 6650 2100
+Text Label 3850 2200 0    50   ~ 0
+Čte
+Wire Wire Line
+	1850 2800 1500 2800
+Wire Wire Line
+	1850 2900 1500 2900
+Wire Wire Line
+	1850 3000 1500 3000
+Wire Wire Line
+	1850 3100 1500 3100
+NoConn ~ 1500 3100
+Wire Wire Line
+	3450 2900 3650 2900
+Wire Wire Line
+	3450 2500 3650 2500
+NoConn ~ 3650 2500
+NoConn ~ 3650 2900
+Wire Wire Line
+	3450 3200 3650 3200
+NoConn ~ 3650 3200
+Wire Wire Line
+	4300 3750 9500 3750
+Wire Wire Line
+	4300 3000 4300 3750
+Connection ~ 4300 3750
+Wire Wire Line
+	4300 3750 4300 4900
+Wire Wire Line
+	3450 2700 3700 2700
+NoConn ~ 3700 2700
+Text GLabel 9500 2750 0    50   Input ~ 0
+VDD_1
+Text GLabel 1500 2700 0    50   Input ~ 0
+VDD_1
+Text GLabel 1500 2800 0    50   Input ~ 0
+VDD_2
+Text GLabel 1500 2900 0    50   Input ~ 0
+VDD_3
+Text GLabel 1500 3000 0    50   Input ~ 0
+VDD_4
+Text GLabel 9500 4000 0    50   Input ~ 0
+VDD_2
+Text GLabel 9500 5000 0    50   Input ~ 0
+VDD_3
+Text GLabel 9500 5950 0    50   Input ~ 0
+VDD_4
 $EndSCHEMATC

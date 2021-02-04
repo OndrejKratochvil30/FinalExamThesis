@@ -213,17 +213,6 @@ F 3 "" H 3100 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3V3 #PWR0123
-U 1 1 601BA865
-P 3100 5800
-F 0 "#PWR0123" H 3100 5650 50  0001 C CNN
-F 1 "+3V3" V 3115 5928 50  0000 L CNN
-F 2 "" H 3100 5800 50  0001 C CNN
-F 3 "" H 3100 5800 50  0001 C CNN
-	1    3100 5800
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+3V3 #PWR0106
 U 1 1 601B673B
 P 2250 5300
@@ -232,21 +221,6 @@ F 1 "+3V3" V 2265 5428 50  0000 L CNN
 F 2 "" H 2250 5300 50  0001 C CNN
 F 3 "" H 2250 5300 50  0001 C CNN
 	1    2250 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60284C80
-P 3100 5900
-AR Path="/601BF914/60284C80" Ref="#PWR?"  Part="1" 
-AR Path="/601E7BA1/60284C80" Ref="#PWR?"  Part="1" 
-AR Path="/60210E5F/60284C80" Ref="#PWR?"  Part="1" 
-AR Path="/60218F69/60284C80" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 3100 5650 50  0001 C CNN
-F 1 "GND" V 3105 5772 50  0000 R CNN
-F 2 "" H 3100 5900 50  0001 C CNN
-F 3 "" H 3100 5900 50  0001 C CNN
-	1    3100 5900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -274,4 +248,46 @@ F 3 "" H 2450 5450 50  0001 C CNN
 	1    2700 5450
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602430E4
+P 3350 6100
+AR Path="/601BF914/602430E4" Ref="#PWR?"  Part="1" 
+AR Path="/601E7BA1/602430E4" Ref="#PWR?"  Part="1" 
+AR Path="/60210E5F/602430E4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3350 5850 50  0001 C CNN
+F 1 "GND" V 3355 5972 50  0000 R CNN
+F 2 "" H 3350 6100 50  0001 C CNN
+F 3 "" H 3350 6100 50  0001 C CNN
+	1    3350 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602430EA
+P 3250 5950
+AR Path="/601BF914/602430EA" Ref="C?"  Part="1" 
+AR Path="/601E7BA1/602430EA" Ref="C?"  Part="1" 
+AR Path="/60210E5F/602430EA" Ref="C?"  Part="1" 
+F 0 "C?" H 3200 6350 50  0000 L CNN
+F 1 "10nF" H 3150 6250 50  0000 L CNN
+F 2 "" H 3288 5800 50  0001 C CNN
+F 3 "~" H 3250 5950 50  0001 C CNN
+	1    3250 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 6100 3250 6100
+Wire Wire Line
+	3350 6100 3250 6100
+Connection ~ 3250 6100
+Text HLabel 3400 5800 2    50   Input ~ 0
+VDD_4
+Wire Wire Line
+	3400 5800 3250 5800
+Wire Wire Line
+	3250 5800 3100 5800
+Connection ~ 3250 5800
+Wire Wire Line
+	3100 5900 3100 6100
 $EndSCHEMATC

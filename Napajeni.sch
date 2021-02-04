@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Transistor_FET:BS250 Q1
-U 1 1 6018CD91
-P 5700 2300
-F 0 "Q1" V 6042 2300 50  0000 C CNN
-F 1 "BS250" V 5951 2300 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5900 2225 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 5700 2300 50  0001 L CNN
-	1    5700 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR03
 U 1 1 6018DD80
 P 5250 3550
@@ -46,91 +35,8 @@ F 3 "" H 5700 3550 50  0001 C CNN
 	1    5700 3550
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 6018E6D4
-P 6450 3550
-F 0 "#PWR07" H 6450 3300 50  0001 C CNN
-F 1 "GND" H 6455 3377 50  0000 C CNN
-F 2 "" H 6450 3550 50  0001 C CNN
-F 3 "" H 6450 3550 50  0001 C CNN
-	1    6450 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 2200 5050 2200
 Wire Wire Line
 	5700 2500 5700 3550
-$Comp
-L Transistor_FET:BS250 Q4
-U 1 1 6018F4D2
-P 7200 2300
-F 0 "Q4" V 7542 2300 50  0000 C CNN
-F 1 "BS250" V 7451 2300 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7400 2225 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 7200 2300 50  0001 L CNN
-	1    7200 2300
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	5900 2200 6250 2200
-$Comp
-L Device:R R3
-U 1 1 60196125
-P 6650 2500
-F 0 "R3" V 6443 2500 50  0000 C CNN
-F 1 "100k" V 6534 2500 50  0000 C CNN
-F 2 "" V 6580 2500 50  0001 C CNN
-F 3 "~" H 6650 2500 50  0001 C CNN
-	1    6650 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 60196D5C
-P 6450 3350
-F 0 "R2" H 6380 3304 50  0000 R CNN
-F 1 "100k" H 6380 3395 50  0000 R CNN
-F 2 "" V 6380 3350 50  0001 C CNN
-F 3 "~" H 6450 3350 50  0001 C CNN
-	1    6450 3350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 601974AC
-P 6100 3550
-F 0 "#PWR06" H 6100 3300 50  0001 C CNN
-F 1 "GND" H 6105 3377 50  0000 C CNN
-F 2 "" H 6100 3550 50  0001 C CNN
-F 3 "" H 6100 3550 50  0001 C CNN
-	1    6100 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:NTR2101P Q2
-U 1 1 60197888
-P 6200 3100
-F 0 "Q2" H 6405 3146 50  0000 L CNN
-F 1 "NTR2101P" H 6405 3055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6400 3025 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF" H 6200 3100 50  0001 L CNN
-	1    6200 3100
-	-1   0    0    -1  
-$EndComp
-Text HLabel 6050 2750 0    50   Input ~ 0
-SW_ON
-$Comp
-L Device:R R1
-U 1 1 60198B1E
-P 6100 2550
-F 0 "R1" V 6300 2550 50  0000 R CNN
-F 1 "10k" V 6200 2600 50  0000 R CNN
-F 2 "" V 6030 2550 50  0001 C CNN
-F 3 "~" H 6100 2550 50  0001 C CNN
-	1    6100 2550
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:Polyfuse F1
 U 1 1 6019A463
@@ -145,61 +51,6 @@ $EndComp
 Wire Wire Line
 	5350 2200 5500 2200
 $Comp
-L Device:C C1
-U 1 1 6019BC61
-P 7000 2800
-F 0 "C1" V 6748 2800 50  0000 C CNN
-F 1 "10uf" V 6839 2800 50  0000 C CNN
-F 2 "" H 7038 2650 50  0001 C CNN
-F 3 "~" H 7000 2800 50  0001 C CNN
-	1    7000 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 6019C91E
-P 7000 2600
-F 0 "R4" V 6793 2600 50  0000 C CNN
-F 1 "2M" V 6884 2600 50  0000 C CNN
-F 2 "" V 6930 2600 50  0001 C CNN
-F 3 "~" H 7000 2600 50  0001 C CNN
-	1    7000 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_FET:NTR2101P Q3
-U 1 1 6019D39D
-P 6700 3100
-F 0 "Q3" V 6900 3050 50  0000 L CNN
-F 1 "NTR2101P" V 6900 2650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6900 3025 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF" H 6700 3100 50  0001 L CNN
-	1    6700 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_MEC_5G SW1
-U 1 1 601B3E7E
-P 6450 2750
-F 0 "SW1" H 6450 3035 50  0000 C CNN
-F 1 "SW_MEC_5G" H 6450 2944 50  0000 C CNN
-F 2 "" H 6450 2950 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6450 2950 50  0001 C CNN
-	1    6450 2750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6100 2350 6100 2400
-Wire Wire Line
-	6250 2200 6250 2500
-Wire Wire Line
-	6250 2500 6450 2500
-Connection ~ 6250 2200
-Wire Wire Line
-	6250 2200 7000 2200
-Wire Wire Line
-	6800 2500 7200 2500
-$Comp
 L power:GND #PWR09
 U 1 1 601B5E05
 P 7200 3550
@@ -210,58 +61,6 @@ F 3 "" H 7200 3550 50  0001 C CNN
 	1    7200 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7200 2500 7200 2600
-Connection ~ 7200 2500
-Wire Wire Line
-	7150 2800 7200 2800
-Wire Wire Line
-	7150 2600 7200 2600
-Connection ~ 7200 2600
-Wire Wire Line
-	7200 2600 7200 2800
-Wire Wire Line
-	6850 2800 6800 2800
-Wire Wire Line
-	6800 2800 6800 2900
-Wire Wire Line
-	6850 2600 6800 2600
-Wire Wire Line
-	6800 2600 6800 2800
-Connection ~ 6800 2800
-$Comp
-L power:GND #PWR08
-U 1 1 601B7179
-P 6800 3550
-F 0 "#PWR08" H 6800 3300 50  0001 C CNN
-F 1 "GND" H 6805 3377 50  0000 C CNN
-F 2 "" H 6800 3550 50  0001 C CNN
-F 3 "" H 6800 3550 50  0001 C CNN
-	1    6800 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 3550 6800 3300
-Wire Wire Line
-	6450 3550 6450 3500
-Wire Wire Line
-	6100 3550 6100 3300
-Wire Wire Line
-	6400 3100 6450 3100
-Wire Wire Line
-	6450 3200 6450 3100
-Connection ~ 6450 3100
-Wire Wire Line
-	6450 3100 6500 3100
-Wire Wire Line
-	6450 2950 6450 3100
-Wire Wire Line
-	6450 2550 6450 2500
-Connection ~ 6450 2500
-Wire Wire Line
-	6450 2500 6500 2500
-Wire Wire Line
-	6100 2900 6100 2750
 $Comp
 L Transistor_FET:NTR2101P Q5
 U 1 1 601B9875
@@ -274,19 +73,11 @@ F 3 "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF" H 7300 3100 50  0001 L
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 2800 7200 2900
-Connection ~ 7200 2800
-Wire Wire Line
 	7200 3300 7200 3550
 Wire Wire Line
 	7400 2200 7900 2200
 Wire Wire Line
 	7900 2200 7900 1800
-Wire Wire Line
-	6050 2750 6100 2750
-Connection ~ 6100 2750
-Wire Wire Line
-	6100 2750 6100 2700
 $Comp
 L Device:R R5
 U 1 1 601BBFD0
@@ -370,17 +161,6 @@ F 3 "" H 7600 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0105
-U 1 1 601A5073
-P 6100 2350
-F 0 "#PWR0105" H 6100 2200 50  0001 C CNN
-F 1 "+3V3" H 6100 2550 50  0000 C CNN
-F 2 "" H 6100 2350 50  0001 C CNN
-F 3 "" H 6100 2350 50  0001 C CNN
-	1    6100 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 601B3EBD
 P 7600 2500
@@ -394,32 +174,70 @@ $EndComp
 Connection ~ 7600 2500
 Wire Wire Line
 	4450 2500 5250 2500
-Wire Wire Line
-	4450 2100 4950 2100
-Wire Wire Line
-	4950 2100 4950 2200
 $Comp
 L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL1
 U 1 1 601FA68F
-P 4250 2100
-F 0 "PL1" V 4025 2112 50  0000 C CNN
-F 1 "Plate" V 4116 2112 50  0000 C CNN
-F 2 "" H 4250 2100 50  0001 C CNN
-F 3 "" H 4250 2100 50  0001 C CNN
-	1    4250 2100
+P 4250 2200
+F 0 "PL1" V 4025 2212 50  0000 C CNN
+F 1 "Plate" V 4116 2212 50  0000 C CNN
+F 2 "" H 4250 2200 50  0001 C CNN
+F 3 "" H 4250 2200 50  0001 C CNN
+	1    4250 2200
 	0    1    1    0   
 $EndComp
 $Comp
 L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL2
 U 1 1 601FAA1F
 P 4250 2500
-F 0 "PL2" V 4025 2512 50  0000 C CNN
-F 1 "Plate" V 4116 2512 50  0000 C CNN
+F 0 "PL2" V 4350 2500 50  0000 C CNN
+F 1 "Plate" V 4450 2500 50  0000 C CNN
 F 2 "" H 4250 2500 50  0001 C CNN
 F 3 "" H 4250 2500 50  0001 C CNN
 	1    4250 2500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5250 2500 5250 3550
+	5250 2500 5250 2800
+Wire Wire Line
+	4450 2200 5050 2200
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 60214FF6
+P 5250 2800
+F 0 "#FLG01" H 5250 2875 50  0001 C CNN
+F 1 "PWR_FLAG" V 5250 2927 50  0000 L CNN
+F 2 "" H 5250 2800 50  0001 C CNN
+F 3 "~" H 5250 2800 50  0001 C CNN
+	1    5250 2800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5250 2800
+Wire Wire Line
+	5250 2800 5250 3550
+$Comp
+L Transistor_FET:BS250 Q4
+U 1 1 6018F4D2
+P 7200 2300
+F 0 "Q4" V 7542 2300 50  0000 C CNN
+F 1 "BS250" V 7451 2300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7400 2225 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 7200 2300 50  0001 L CNN
+	1    7200 2300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_FET:BS250 Q1
+U 1 1 6018CD91
+P 5700 2300
+F 0 "Q1" V 6042 2300 50  0000 C CNN
+F 1 "BS250" V 5951 2300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5900 2225 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 5700 2300 50  0001 L CNN
+	1    5700 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 2200 7000 2200
+Wire Wire Line
+	7200 2500 7200 2900
 $EndSCHEMATC
