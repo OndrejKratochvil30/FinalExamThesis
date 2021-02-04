@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -179,6 +179,10 @@ Text HLabel 6850 2450 0    50   Input ~ 0
 EN3
 Text HLabel 6850 2750 0    50   Input ~ 0
 PDN_3
+Text HLabel 6850 3050 0    50   Input ~ 0
+STEP3
+Text HLabel 6850 3150 0    50   Input ~ 0
+DIR3
 $Comp
 L power:GND #PWR?
 U 1 1 60217C1C
@@ -242,6 +246,17 @@ F 3 "" H 6850 2550 50  0001 C CNN
 	1    6850 2550
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Tmc2209BreakoutBoard:TMC2209BreaoutBoard 2209Br3
+U 1 1 602743DD
+P 7300 2700
+F 0 "2209Br3" H 7275 2127 50  0000 C CNN
+F 1 "TMC2209BreaoutBoard" H 7275 2036 50  0000 C CNN
+F 2 "" H 7050 2700 50  0001 C CNN
+F 3 "" H 7050 2700 50  0001 C CNN
+	1    7300 2700
+	1    0    0    -1  
+$EndComp
 NoConn ~ 7100 2050
 NoConn ~ 7300 2050
 NoConn ~ 6850 2950
@@ -261,17 +276,4 @@ F 3 "" H 7700 3150 50  0001 C CNN
 	1    7700 3150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Základní-deska-II-rescue:TMC2209BreaoutBoard-Tmc2209BreakoutBoard 2209Br3
-U 1 1 602743DD
-P 7300 2700
-F 0 "2209Br3" H 7275 2127 50  0000 C CNN
-F 1 "TMC2209BreaoutBoard" H 7275 2036 50  0000 C CNN
-F 2 "" H 7050 2700 50  0001 C CNN
-F 3 "" H 7050 2700 50  0001 C CNN
-	1    7300 2700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6850 3050
-NoConn ~ 6850 3150
 $EndSCHEMATC

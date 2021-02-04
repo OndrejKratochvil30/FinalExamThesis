@@ -399,7 +399,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 2100 4950 2200
 $Comp
-L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL1
+L Tmc2209BreakoutBoard:Plate PL1
 U 1 1 601FA68F
 P 4250 2100
 F 0 "PL1" V 4025 2112 50  0000 C CNN
@@ -410,7 +410,7 @@ F 3 "" H 4250 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL2
+L Tmc2209BreakoutBoard:Plate PL2
 U 1 1 601FAA1F
 P 4250 2500
 F 0 "PL2" V 4025 2512 50  0000 C CNN

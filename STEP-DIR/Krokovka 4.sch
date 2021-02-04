@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -77,6 +77,10 @@ Wire Wire Line
 	3100 5700 3950 5700
 Wire Wire Line
 	3100 5600 4300 5600
+Wire Wire Line
+	3100 5500 4650 5500
+Wire Wire Line
+	3100 5400 5000 5400
 Wire Wire Line
 	3950 6100 3950 5700
 Connection ~ 3950 5700
@@ -167,6 +171,10 @@ Text HLabel 2250 5200 0    50   Input ~ 0
 EN4
 Text HLabel 2250 5600 0    50   Input ~ 0
 PDN_4
+Text HLabel 2250 5800 0    50   Input ~ 0
+STEP4
+Text HLabel 2250 5900 0    50   Input ~ 0
+DIR4
 $Comp
 L power:GND #PWR?
 U 1 1 6021D3CD
@@ -235,6 +243,17 @@ F 3 "" H 2250 5300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
+L Tmc2209BreakoutBoard:TMC2209BreaoutBoard 2209Br4
+U 1 1 6027E2D2
+P 2700 5450
+F 0 "2209Br4" H 2675 4877 50  0000 C CNN
+F 1 "TMC2209BreaoutBoard" H 2675 4786 50  0000 C CNN
+F 2 "" H 2450 5450 50  0001 C CNN
+F 3 "" H 2450 5450 50  0001 C CNN
+	1    2700 5450
+	1    0    0    -1  
+$EndComp
+$Comp
 L power:GND #PWR?
 U 1 1 60284C80
 P 3100 5900
@@ -256,22 +275,5 @@ NoConn ~ 2500 4800
 NoConn ~ 2700 4800
 Wire Wire Line
 	2250 5400 2250 5300
-NoConn ~ 2250 5900
-NoConn ~ 2250 5800
-Wire Wire Line
-	3100 5500 4650 5500
-Wire Wire Line
-	3100 5400 5000 5400
 Connection ~ 2250 5300
-$Comp
-L Základní-deska-II-rescue:TMC2209BreaoutBoard-Tmc2209BreakoutBoard 2209Br4
-U 1 1 6027E2D2
-P 2700 5450
-F 0 "2209Br4" H 2675 4877 50  0000 C CNN
-F 1 "TMC2209BreaoutBoard" H 2675 4786 50  0000 C CNN
-F 2 "" H 2450 5450 50  0001 C CNN
-F 3 "" H 2450 5450 50  0001 C CNN
-	1    2700 5450
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

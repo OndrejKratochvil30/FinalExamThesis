@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -113,6 +113,10 @@ Text HLabel 7150 3350 0    50   Input ~ 0
 EN1
 Text HLabel 7150 3650 0    50   Input ~ 0
 PDN_1
+Text HLabel 7150 3950 0    50   Input ~ 0
+STEP1
+Text HLabel 7150 4050 0    50   Input ~ 0
+DIR1
 $Comp
 L power:GND #PWR0109
 U 1 1 60244E14
@@ -226,7 +230,7 @@ NoConn ~ 7600 2950
 Text HLabel 7500 2850 1    50   Input ~ 0
 INDEX_1
 $Comp
-L Základní-deska-II-rescue:TMC2209BreaoutBoard-Tmc2209BreakoutBoard 2209Br1
+L Tmc2209BreakoutBoard:TMC2209BreaoutBoard 2209Br1
 U 1 1 601F591C
 P 7600 3600
 F 0 "2209Br1" H 7575 3027 50  0000 C CNN
@@ -238,6 +242,4 @@ F 3 "" H 7350 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7500 2950 7500 2850
-NoConn ~ 7150 3950
-NoConn ~ 7150 4050
 $EndSCHEMATC
