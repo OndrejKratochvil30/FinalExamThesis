@@ -134,6 +134,21 @@ X IO25 9 -800 100 200 R 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # Switch_SW_MEC_5G
 #
 DEF Switch_SW_MEC_5G SW 0 40 N N 1 F N
@@ -224,10 +239,10 @@ DEF Základní-deska-II-rescue_Plate-Tmc2209BreakoutBoard PL 0 40 Y Y 1 F N
 F0 "PL" 0 -250 50 H V C CNN
 F1 "Základní-deska-II-rescue_Plate-Tmc2209BreakoutBoard" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "" 100 -50 50 H I C CNN
 DRAW
 S -50 -50 50 100 0 1 0 N
-X PWR 1 0 200 100 D 50 50 1 1 I
+X ~ 1 0 200 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -241,7 +256,7 @@ F3 "" -250 0 50 H I C CNN
 DRAW
 S -350 550 300 -500 0 1 0 N
 X EN 1 -450 250 100 R 50 50 1 1 B
-X VDD 10 400 -350 100 L 50 50 1 1 W
+X VDD 10 400 -350 100 L 50 50 1 1 B
 X B2 11 400 -250 100 L 50 50 1 1 B
 X B1 12 400 -150 100 L 50 50 1 1 B
 X A1 13 400 -50 100 L 50 50 1 1 B

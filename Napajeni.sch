@@ -70,32 +70,28 @@ Wire Wire Line
 $Comp
 L Device:R R5
 U 1 1 601BBFD0
-P 7600 2800
-F 0 "R5" H 7530 2754 50  0000 R CNN
-F 1 "10k" H 7530 2845 50  0000 R CNN
-F 2 "" V 7530 2800 50  0001 C CNN
-F 3 "~" H 7600 2800 50  0001 C CNN
-	1    7600 2800
-	-1   0    0    1   
+P 7600 3350
+F 0 "R5" H 7530 3304 50  0000 R CNN
+F 1 "10k" H 7530 3395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7530 3350 50  0001 C CNN
+F 3 "~" H 7600 3350 50  0001 C CNN
+F 4 "C17414	" H 7600 3350 50  0001 C CNN "LCSC"
+	1    7600 3350
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 601BC6CA
-P 7600 2500
-F 0 "#PWR011" H 7600 2250 50  0001 C CNN
-F 1 "GND" H 7605 2327 50  0000 C CNN
-F 2 "" H 7600 2500 50  0001 C CNN
-F 3 "" H 7600 2500 50  0001 C CNN
-	1    7600 2500
-	-1   0    0    1   
+P 7600 3550
+F 0 "#PWR011" H 7600 3300 50  0001 C CNN
+F 1 "GND" H 7605 3377 50  0000 C CNN
+F 2 "" H 7600 3550 50  0001 C CNN
+F 3 "" H 7600 3550 50  0001 C CNN
+	1    7600 3550
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7500 3100 7600 3100
-Wire Wire Line
-	7600 3100 7600 2950
-Connection ~ 7600 3100
 Text HLabel 8000 3100 2    50   Input ~ 0
-SW_OFF
+SW_CTRL
 Wire Wire Line
 	8000 3100 7950 3100
 $Comp
@@ -124,8 +120,6 @@ F 3 "" H 7900 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 2650 7600 2500
-Wire Wire Line
 	4450 2500 5250 2500
 $Comp
 L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL1
@@ -136,17 +130,6 @@ F 1 "Plate" V 4116 2212 50  0000 C CNN
 F 2 "" H 4250 2200 50  0001 C CNN
 F 3 "" H 4250 2200 50  0001 C CNN
 	1    4250 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL2
-U 1 1 601FAA1F
-P 4250 2500
-F 0 "PL2" V 4350 2500 50  0000 C CNN
-F 1 "Plate" V 4450 2500 50  0000 C CNN
-F 2 "" H 4250 2500 50  0001 C CNN
-F 3 "" H 4250 2500 50  0001 C CNN
-	1    4250 2500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -190,9 +173,9 @@ F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 5700 2300 50  0001 L CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5900 2200 7000 2200
+	5900 2200 5950 2200
 Wire Wire Line
-	7200 2500 7200 2900
+	7200 2500 7200 2550
 $Comp
 L Transistor_FET:2N7000 Q2
 U 1 1 60247708
@@ -201,8 +184,9 @@ F 0 "Q2" H 7505 3054 50  0000 L CNN
 F 1 "2N7000" H 7505 3145 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7500 3025 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7300 3100 50  0001 L CNN
+F 4 "C8545" H 7300 3100 50  0001 C CNN "LCSC"
 	1    7300 3100
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R3
@@ -210,11 +194,54 @@ U 1 1 602489A5
 P 7800 3100
 F 0 "R3" H 7730 3054 50  0000 R CNN
 F 1 "330" H 7730 3145 50  0000 R CNN
-F 2 "" V 7730 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7730 3100 50  0001 C CNN
 F 3 "~" H 7800 3100 50  0001 C CNN
+F 4 "C17617" H 7800 3100 50  0001 C CNN "LCSC"
 	1    7800 3100
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:R R15
+U 1 1 60230BAA
+P 6900 2550
+F 0 "R15" H 6830 2504 50  0000 R CNN
+F 1 "100k" H 6830 2595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6830 2550 50  0001 C CNN
+F 3 "~" H 6900 2550 50  0001 C CNN
+F 4 "C17407" H 6900 2550 50  0001 C CNN "LCSC"
+	1    6900 2550
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	7650 3100 7600 3100
+	6750 2550 5950 2550
+Wire Wire Line
+	5950 2550 5950 2200
+Connection ~ 5950 2200
+Wire Wire Line
+	5950 2200 7000 2200
+Wire Wire Line
+	7050 2550 7200 2550
+Connection ~ 7200 2550
+Wire Wire Line
+	7200 2550 7200 2900
+Wire Wire Line
+	7500 3100 7600 3100
+Wire Wire Line
+	7600 3200 7600 3100
+Connection ~ 7600 3100
+Wire Wire Line
+	7600 3100 7650 3100
+Wire Wire Line
+	7600 3500 7600 3550
+$Comp
+L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL2
+U 1 1 601FAA1F
+P 4250 2500
+F 0 "PL2" V 4350 2500 50  0000 C CNN
+F 1 "Plate" V 4450 2500 50  0000 C CNN
+F 2 "" H 4250 2500 50  0001 C CNN
+F 3 "" H 4250 2500 50  0001 C CNN
+	1    4250 2500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
