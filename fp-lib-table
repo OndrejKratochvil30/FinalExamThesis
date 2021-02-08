@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name FinalExamThesis)(type KiCad)(uri ${KIPRJMOD}/FinalExamThesis.pretty)(options "")(descr ""))
+)

@@ -46,8 +46,9 @@ U 1 1 602202EC
 P 3900 3000
 F 0 "R6" V 3693 3000 50  0000 C CNN
 F 1 "1k" V 3784 3000 50  0000 C CNN
-F 2 "" V 3830 3000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3830 3000 50  0001 C CNN
 F 3 "~" H 3900 3000 50  0001 C CNN
+F 4 "C17513" H 3900 3000 50  0001 C CNN "LCSC"
 	1    3900 3000
 	0    1    1    0   
 $EndComp
@@ -108,10 +109,11 @@ U 1 1 601D8F66
 P 2650 2900
 F 0 "U1" H 2650 4067 50  0000 C CNN
 F 1 "ESP32-DEVKITC-32D" H 2650 3976 50  0000 C CNN
-F 2 "MODULE_ESP32-DEVKITC-32D" H 2650 2900 50  0001 L BNN
+F 2 "FinalExamThesis:MODULE_ESP32-DEVKITC-32D" H 2650 2900 50  0001 L BNN
 F 3 "" H 2650 2900 50  0001 L BNN
 F 4 "4" H 2650 2900 50  0001 L BNN "PARTREV"
 F 5 "Espressif Systems" H 2650 2900 50  0001 L BNN "MANUFACTURER"
+F 6 "-" H 2650 2900 50  0001 C CNN "LCSC"
 	1    2650 2900
 	1    0    0    -1  
 $EndComp
@@ -214,8 +216,9 @@ U 1 1 601C090D
 P 8950 6250
 F 0 "R10" V 8743 6250 50  0000 C CNN
 F 1 "1k" V 8834 6250 50  0000 C CNN
-F 2 "" V 8880 6250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8880 6250 50  0001 C CNN
 F 3 "~" H 8950 6250 50  0001 C CNN
+F 4 "C17513" H 8950 6250 50  0001 C CNN "LCSC"
 	1    8950 6250
 	0    1    1    0   
 $EndComp
@@ -227,8 +230,9 @@ U 1 1 601C0DC6
 P 8950 4650
 F 0 "R9" V 8743 4650 50  0000 C CNN
 F 1 "1k" V 8834 4650 50  0000 C CNN
-F 2 "" V 8880 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8880 4650 50  0001 C CNN
 F 3 "~" H 8950 4650 50  0001 C CNN
+F 4 "C17513" H 8950 4650 50  0001 C CNN "LCSC"
 	1    8950 4650
 	0    1    1    0   
 $EndComp
@@ -240,8 +244,9 @@ U 1 1 601C1307
 P 8950 3850
 F 0 "R8" V 8743 3850 50  0000 C CNN
 F 1 "1k" V 8834 3850 50  0000 C CNN
-F 2 "" V 8880 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8880 3850 50  0001 C CNN
 F 3 "~" H 8950 3850 50  0001 C CNN
+F 4 "C17513" H 8950 3850 50  0001 C CNN "LCSC"
 	1    8950 3850
 	0    1    1    0   
 $EndComp
@@ -253,8 +258,9 @@ U 1 1 601C15E1
 P 8950 2950
 F 0 "R7" V 8743 2950 50  0000 C CNN
 F 1 "1k" V 8834 2950 50  0000 C CNN
-F 2 "" V 8880 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8880 2950 50  0001 C CNN
 F 3 "~" H 8950 2950 50  0001 C CNN
+F 4 "C17513" H 8950 2950 50  0001 C CNN "LCSC"
 	1    8950 2950
 	0    1    1    0   
 $EndComp
@@ -268,7 +274,7 @@ F1 "Krokovka1.sch" 50
 F2 "EN1" I L 9500 2500 50 
 F3 "PDN_1" I L 9500 2600 50 
 F4 "INDEX_1" I L 9500 2950 50 
-F5 "VDD" I L 9500 2750 50 
+F5 "VDD_1" I L 9500 2750 50 
 $EndSheet
 $Sheet
 S 9500 4600 800  700 
@@ -290,8 +296,9 @@ U 1 1 601D0D3F
 P 2950 5150
 F 0 "J2" V 2800 5100 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 2900 5400 50  0000 R CNN
-F 2 "" H 2950 5150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2950 5150 50  0001 C CNN
 F 3 "~" H 2950 5150 50  0001 C CNN
+F 4 "-" H 2950 5150 50  0001 C CNN "LCSC"
 	1    2950 5150
 	0    1    1    0   
 $EndComp
@@ -345,8 +352,9 @@ U 1 1 601D2382
 P 850 4350
 F 0 "J1" V 700 4300 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 800 4600 50  0000 R CNN
-F 2 "" H 850 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 850 4350 50  0001 C CNN
 F 3 "~" H 850 4350 50  0001 C CNN
+F 4 "-" H 850 4350 50  0001 C CNN "LCSC"
 	1    850  4350
 	0    -1   -1   0   
 $EndComp
@@ -400,8 +408,9 @@ U 1 1 60202F96
 P 2250 5150
 F 0 "J5" V 2100 5100 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 2200 5400 50  0000 R CNN
-F 2 "" H 2250 5150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2250 5150 50  0001 C CNN
 F 3 "~" H 2250 5150 50  0001 C CNN
+F 4 "-" H 2250 5150 50  0001 C CNN "LCSC"
 	1    2250 5150
 	0    1    1    0   
 $EndComp
@@ -414,8 +423,9 @@ AR Path="/601BF914/601E6C8F" Ref="SW?"  Part="1"
 AR Path="/601E6C8F" Ref="SW1"  Part="1" 
 F 0 "SW1" H 5950 2085 50  0000 C CNN
 F 1 "SW_MEC_5G" H 5950 1994 50  0000 C CNN
-F 2 "" H 5950 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5950 2000 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 5950 2000 50  0001 C CNN
+F 4 "-" H 5950 1800 50  0001 C CNN "LCSC"
 	1    5950 1800
 	0    1    1    0   
 $EndComp
@@ -427,8 +437,9 @@ AR Path="/601BF914/601E6C95" Ref="R?"  Part="1"
 AR Path="/601E6C95" Ref="R2"  Part="1" 
 F 0 "R2" H 5720 1846 50  0000 L CNN
 F 1 "100k" H 5720 1755 50  0000 L CNN
-F 2 "" V 5580 1800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5580 1800 50  0001 C CNN
 F 3 "~" H 5650 1800 50  0001 C CNN
+F 4 "C17407" H 5650 1800 50  0001 C CNN "LCSC"
 	1    5650 1800
 	1    0    0    -1  
 $EndComp
@@ -476,8 +487,9 @@ AR Path="/601BF914/601E6C9B" Ref="R?"  Part="1"
 AR Path="/601E6C9B" Ref="R1"  Part="1" 
 F 0 "R1" V 5143 2100 50  0000 C CNN
 F 1 "1k" V 5234 2100 50  0000 C CNN
-F 2 "" V 5280 2100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5280 2100 50  0001 C CNN
 F 3 "~" H 5350 2100 50  0001 C CNN
+F 4 "C17513" H 5350 2100 50  0001 C CNN "LCSC"
 	1    5350 2100
 	0    1    1    0   
 $EndComp
@@ -490,8 +502,9 @@ AR Path="/601BF914/601F7428" Ref="SW?"  Part="1"
 AR Path="/601F7428" Ref="SW3"  Part="1" 
 F 0 "SW3" H 6300 2085 50  0000 C CNN
 F 1 "SW_MEC_5G" H 6300 1994 50  0000 C CNN
-F 2 "" H 6300 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6300 2000 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6300 2000 50  0001 C CNN
+F 4 "-" H 6300 1800 50  0001 C CNN "LCSC"
 	1    6300 1800
 	0    1    1    0   
 $EndComp
@@ -504,8 +517,9 @@ AR Path="/601BF914/601F76BE" Ref="SW?"  Part="1"
 AR Path="/601F76BE" Ref="SW4"  Part="1" 
 F 0 "SW4" H 6650 2085 50  0000 C CNN
 F 1 "SW_MEC_5G" H 6650 1994 50  0000 C CNN
-F 2 "" H 6650 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 2000 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6650 2000 50  0001 C CNN
+F 4 "-" H 6650 1800 50  0001 C CNN "LCSC"
 	1    6650 1800
 	0    1    1    0   
 $EndComp
@@ -518,8 +532,9 @@ AR Path="/601BF914/601F78CA" Ref="SW?"  Part="1"
 AR Path="/601F78CA" Ref="SW5"  Part="1" 
 F 0 "SW5" H 7050 2085 50  0000 C CNN
 F 1 "SW_MEC_5G" H 7050 1994 50  0000 C CNN
-F 2 "" H 7050 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 2000 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7050 2000 50  0001 C CNN
+F 4 "-" H 7050 1800 50  0001 C CNN "LCSC"
 	1    7050 1800
 	0    1    1    0   
 $EndComp
@@ -620,11 +635,56 @@ AR Path="/601BF914/6024CA84" Ref="R?"  Part="1"
 AR Path="/6024CA84" Ref="R4"  Part="1" 
 F 0 "R4" V 5550 2200 50  0000 C CNN
 F 1 "330" V 5450 2200 50  0000 C CNN
-F 2 "" V 5280 2200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5280 2200 50  0001 C CNN
 F 3 "~" H 5350 2200 50  0001 C CNN
+F 4 "C17617" H 5350 2200 50  0001 C CNN "LCSC"
 	1    5350 2200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5500 2200 5650 2200
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6022FB89
+P 650 650
+F 0 "H1" H 750 696 50  0000 L CNN
+F 1 "MountingHole" H 750 605 50  0000 L CNN
+F 2 "" H 650 650 50  0001 C CNN
+F 3 "~" H 650 650 50  0001 C CNN
+	1    650  650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60230021
+P 650 850
+F 0 "H2" H 750 896 50  0000 L CNN
+F 1 "MountingHole" H 750 805 50  0000 L CNN
+F 2 "" H 650 850 50  0001 C CNN
+F 3 "~" H 650 850 50  0001 C CNN
+	1    650  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 602300F2
+P 650 1050
+F 0 "H3" H 750 1096 50  0000 L CNN
+F 1 "MountingHole" H 750 1005 50  0000 L CNN
+F 2 "" H 650 1050 50  0001 C CNN
+F 3 "~" H 650 1050 50  0001 C CNN
+	1    650  1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 602301EA
+P 650 1300
+F 0 "H4" H 750 1346 50  0000 L CNN
+F 1 "MountingHole" H 750 1255 50  0000 L CNN
+F 2 "" H 650 1300 50  0001 C CNN
+F 3 "~" H 650 1300 50  0001 C CNN
+	1    650  1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
