@@ -115,8 +115,6 @@ F 4 "-" H 7300 2700 50  0001 C CNN "LCSC"
 	1    7300 2700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6850 3050
-NoConn ~ 6850 3150
 $Comp
 L Device:C C?
 U 1 1 602407B9
@@ -180,4 +178,32 @@ F 3 "~" H 6850 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6850 2650
+$Comp
+L Device:R R18
+U 1 1 6029EFAD
+P 6700 3050
+F 0 "R18" V 6700 3050 50  0000 C CNN
+F 1 "1k" V 6600 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 3050 50  0001 C CNN
+F 3 "~" H 6700 3050 50  0001 C CNN
+F 4 "C17513" H 6700 3050 50  0001 C CNN "LCSC"
+	1    6700 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 6029F320
+P 6700 3150
+F 0 "R19" V 6700 3150 50  0000 C CNN
+F 1 "1k" V 6800 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 3150 50  0001 C CNN
+F 3 "~" H 6700 3150 50  0001 C CNN
+F 4 "C17513" H 6700 3150 50  0001 C CNN "LCSC"
+	1    6700 3150
+	0    1    1    0   
+$EndComp
+Text HLabel 6550 3050 0    50   Input ~ 0
+STEP
+Text HLabel 6550 3150 0    50   Input ~ 0
+DIR
 $EndSCHEMATC

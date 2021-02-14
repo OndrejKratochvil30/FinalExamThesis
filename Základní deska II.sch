@@ -44,8 +44,8 @@ $Comp
 L Device:R R6
 U 1 1 602202EC
 P 3900 3000
-F 0 "R6" V 3693 3000 50  0000 C CNN
-F 1 "1k" V 3784 3000 50  0000 C CNN
+F 0 "R6" V 3900 3000 50  0000 C CNN
+F 1 "1k" V 3950 2850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3830 3000 50  0001 C CNN
 F 3 "~" H 3900 3000 50  0001 C CNN
 F 4 "C17513" H 3900 3000 50  0001 C CNN "LCSC"
@@ -285,6 +285,8 @@ F2 "EN3" I L 9500 4750 50
 F3 "PDN_3" I L 9500 4900 50 
 F4 "INDEX_3" I L 9500 4650 50 
 F5 "VDD_3" I L 9500 5000 50 
+F6 "STEP" I L 9500 5100 50 
+F7 "DIR" I L 9500 5200 50 
 $EndSheet
 Wire Wire Line
 	1750 6250 8800 6250
@@ -415,21 +417,6 @@ F 4 "-" H 2250 5150 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Switch:SW_MEC_5G SW?
-U 1 1 601E6C8F
-P 5950 1800
-AR Path="/60188778/601E6C8F" Ref="SW?"  Part="1" 
-AR Path="/601BF914/601E6C8F" Ref="SW?"  Part="1" 
-AR Path="/601E6C8F" Ref="SW1"  Part="1" 
-F 0 "SW1" H 5950 2085 50  0000 C CNN
-F 1 "SW_MEC_5G" H 5950 1994 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5950 2000 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 5950 2000 50  0001 C CNN
-F 4 "-" H 5950 1800 50  0001 C CNN "LCSC"
-	1    5950 1800
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 601E6C95
 P 5650 1800
@@ -464,13 +451,9 @@ Wire Wire Line
 	5650 1650 5650 1550
 Wire Wire Line
 	5650 1550 5950 1550
-Wire Wire Line
-	5950 1550 5950 1600
 Connection ~ 5650 1550
 Wire Wire Line
 	5650 2100 5950 2100
-Wire Wire Line
-	5950 2100 5950 2000
 Connection ~ 5650 2100
 Wire Wire Line
 	5650 2100 5650 2200
@@ -493,79 +476,22 @@ F 4 "C17513" H 5350 2100 50  0001 C CNN "LCSC"
 	1    5350 2100
 	0    1    1    0   
 $EndComp
-$Comp
-L Switch:SW_MEC_5G SW?
-U 1 1 601F7428
-P 6300 1800
-AR Path="/60188778/601F7428" Ref="SW?"  Part="1" 
-AR Path="/601BF914/601F7428" Ref="SW?"  Part="1" 
-AR Path="/601F7428" Ref="SW3"  Part="1" 
-F 0 "SW3" H 6300 2085 50  0000 C CNN
-F 1 "SW_MEC_5G" H 6300 1994 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6300 2000 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6300 2000 50  0001 C CNN
-F 4 "-" H 6300 1800 50  0001 C CNN "LCSC"
-	1    6300 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Switch:SW_MEC_5G SW?
-U 1 1 601F76BE
-P 6650 1800
-AR Path="/60188778/601F76BE" Ref="SW?"  Part="1" 
-AR Path="/601BF914/601F76BE" Ref="SW?"  Part="1" 
-AR Path="/601F76BE" Ref="SW4"  Part="1" 
-F 0 "SW4" H 6650 2085 50  0000 C CNN
-F 1 "SW_MEC_5G" H 6650 1994 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 2000 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6650 2000 50  0001 C CNN
-F 4 "-" H 6650 1800 50  0001 C CNN "LCSC"
-	1    6650 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Switch:SW_MEC_5G SW?
-U 1 1 601F78CA
-P 7050 1800
-AR Path="/60188778/601F78CA" Ref="SW?"  Part="1" 
-AR Path="/601BF914/601F78CA" Ref="SW?"  Part="1" 
-AR Path="/601F78CA" Ref="SW5"  Part="1" 
-F 0 "SW5" H 7050 2085 50  0000 C CNN
-F 1 "SW_MEC_5G" H 7050 1994 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 2000 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7050 2000 50  0001 C CNN
-F 4 "-" H 7050 1800 50  0001 C CNN "LCSC"
-	1    7050 1800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5950 1550 6300 1550
-Wire Wire Line
-	7050 1550 7050 1600
 Connection ~ 5950 1550
-Wire Wire Line
-	6300 1550 6300 1600
 Connection ~ 6300 1550
 Wire Wire Line
 	6300 1550 6650 1550
-Wire Wire Line
-	6650 1550 6650 1600
 Connection ~ 6650 1550
 Wire Wire Line
 	6650 1550 7050 1550
 Wire Wire Line
 	5950 2100 6300 2100
 Wire Wire Line
-	6300 2100 6300 2000
-Wire Wire Line
 	6300 2100 6650 2100
-Wire Wire Line
-	6650 2100 6650 2000
 Connection ~ 6300 2100
 Wire Wire Line
 	6650 2100 7050 2100
-Wire Wire Line
-	7050 2100 7050 2000
 Connection ~ 6650 2100
 Text Label 3850 2200 0    50   ~ 0
 Čte
@@ -579,15 +505,6 @@ Wire Wire Line
 	1850 3100 1500 3100
 NoConn ~ 1500 3100
 Wire Wire Line
-	3450 2900 3650 2900
-Wire Wire Line
-	3450 2500 3650 2500
-NoConn ~ 3650 2500
-NoConn ~ 3650 2900
-Wire Wire Line
-	3450 3200 3650 3200
-NoConn ~ 3650 3200
-Wire Wire Line
 	4300 3750 9500 3750
 Wire Wire Line
 	4300 3000 4300 3750
@@ -596,7 +513,6 @@ Wire Wire Line
 	4300 3750 4300 4900
 Wire Wire Line
 	3450 2700 3700 2700
-NoConn ~ 3700 2700
 Text GLabel 9500 2750 0    50   Input ~ 0
 VDD_1
 Text GLabel 1500 2700 0    50   Input ~ 0
@@ -687,4 +603,115 @@ F 3 "~" H 650 1300 50  0001 C CNN
 	1    650  1300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 60299CC2
+P 4200 2600
+F 0 "J3" H 4172 2482 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4172 2573 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 2600 50  0001 C CNN
+F 3 "~" H 4200 2600 50  0001 C CNN
+	1    4200 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 2500 3700 2500
+Wire Wire Line
+	3700 2700 3700 2600
+Wire Wire Line
+	5000 2900 5000 5100
+Wire Wire Line
+	5000 5100 9500 5100
+Wire Wire Line
+	3450 2900 5000 2900
+Wire Wire Line
+	4900 5200 9500 5200
+Wire Wire Line
+	3450 3200 4900 3200
+Wire Wire Line
+	4900 3200 4900 5200
+$Comp
+L Device:R R17
+U 1 1 602A877F
+P 3850 2600
+F 0 "R17" V 3850 2600 50  0000 C CNN
+F 1 "330" V 3950 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3780 2600 50  0001 C CNN
+F 3 "~" H 3850 2600 50  0001 C CNN
+F 4 "C17513" H 3850 2600 50  0001 C CNN "LCSC"
+	1    3850 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 602A8C46
+P 3850 2500
+F 0 "R16" V 3850 2500 50  0000 C CNN
+F 1 "330" V 3750 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3780 2500 50  0001 C CNN
+F 3 "~" H 3850 2500 50  0001 C CNN
+F 4 "C17513" H 3850 2500 50  0001 C CNN "LCSC"
+	1    3850 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 602E4ED5
+P 6150 1850
+F 0 "J4" H 6122 1732 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6500 2200 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 1850 50  0001 C CNN
+F 3 "~" H 6150 1850 50  0001 C CNN
+	1    6150 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J8
+U 1 1 602E56CE
+P 6850 1850
+F 0 "J8" H 6822 1732 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7150 2200 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6850 1850 50  0001 C CNN
+F 3 "~" H 6850 1850 50  0001 C CNN
+	1    6850 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J9
+U 1 1 602E585C
+P 7250 1850
+F 0 "J9" H 7222 1732 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7750 1450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7250 1850 50  0001 C CNN
+F 3 "~" H 7250 1850 50  0001 C CNN
+	1    7250 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 602E5ED6
+P 6500 1850
+F 0 "J6" H 6472 1732 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7000 1450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6500 1850 50  0001 C CNN
+F 3 "~" H 6500 1850 50  0001 C CNN
+	1    6500 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 1550 5950 1750
+Wire Wire Line
+	5950 1850 5950 2100
+Wire Wire Line
+	6300 1550 6300 1750
+Wire Wire Line
+	6300 1850 6300 2100
+Wire Wire Line
+	6650 1550 6650 1750
+Wire Wire Line
+	6650 1850 6650 2100
+Wire Wire Line
+	7050 1550 7050 1750
+Wire Wire Line
+	7050 1850 7050 2100
 $EndSCHEMATC
