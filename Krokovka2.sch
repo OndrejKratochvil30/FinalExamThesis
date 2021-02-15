@@ -179,4 +179,16 @@ Wire Wire Line
 Connection ~ 5800 4000
 Wire Wire Line
 	5450 4000 5300 4000
+$Comp
+L Device:C C2
+U 1 1 60311DC8
+P 7050 3600
+F 0 "C2" H 7165 3646 50  0000 L CNN
+F 1 "300mF - electrolyt" H 7165 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7088 3450 50  0001 C CNN
+F 3 "~" H 7050 3600 50  0001 C CNN
+F 4 "C14663" H 7050 3600 50  0001 C CNN "LCSC"
+	1    7050 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
