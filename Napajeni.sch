@@ -182,12 +182,12 @@ F 3 "" H 3200 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Základní-deska-II-rescue:NCE20P45Q-NCE20P45Q iQ2
+L Základní-deska-II-rescue:NCE20P45Q-NCE20P45Q-Základní-deska-II-rescue iQ2
 U 1 1 60300EC1
 P 5050 2250
 AR Path="/60300EC1" Ref="iQ2"  Part="1" 
-AR Path="/60188778/60300EC1" Ref="iQ2"  Part="1" 
-F 0 "iQ2" H 5050 2900 50  0000 C CNN
+AR Path="/60188778/60300EC1" Ref="Q1"  Part="1" 
+F 0 "Q1" H 5050 2900 50  0000 C CNN
 F 1 "NCE20P45Q" H 5050 1550 50  0000 C CNN
 F 2 "FinalExamThesis:NCE20P45Q" H 4950 2350 50  0001 C CNN
 F 3 "" H 4950 2350 50  0001 C CNN
@@ -201,19 +201,6 @@ Wire Wire Line
 Connection ~ 8750 1900
 Wire Wire Line
 	8750 1900 8750 2100
-$Comp
-L Základní-deska-II-rescue:NCE20P45Q-NCE20P45Q iQ1
-U 1 1 602FAA88
-P 7850 2250
-AR Path="/602FAA88" Ref="iQ1"  Part="1" 
-AR Path="/60188778/602FAA88" Ref="iQ1"  Part="1" 
-F 0 "iQ1" H 7850 2900 50  0000 C CNN
-F 1 "NCE20P45Q" H 7850 1600 50  0000 C CNN
-F 2 "FinalExamThesis:NCE20P45Q" H 7750 2350 50  0001 C CNN
-F 3 "" H 7750 2350 50  0001 C CNN
-	1    7850 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 2100 5550 2400
 Connection ~ 5550 2400
@@ -227,12 +214,6 @@ Connection ~ 7200 2450
 Wire Wire Line
 	5950 2100 7350 2100
 Connection ~ 5950 2100
-Wire Wire Line
-	7350 2700 7350 2400
-Connection ~ 7350 2100
-Connection ~ 7350 2400
-Wire Wire Line
-	7350 2400 7350 2100
 Wire Wire Line
 	5550 2100 5950 2100
 Connection ~ 5550 2100
@@ -263,12 +244,31 @@ Wire Wire Line
 	8400 1850 8400 2100
 Connection ~ 8400 2100
 Wire Wire Line
-	8400 2100 8400 2400
-Connection ~ 8400 2400
-Wire Wire Line
-	8400 2400 8400 2700
-Wire Wire Line
 	5550 1850 5800 1850
 Wire Wire Line
 	5800 1850 5800 3500
+Wire Wire Line
+	8400 2400 8400 2700
+Wire Wire Line
+	8400 2100 8400 2400
+Connection ~ 8400 2400
+Connection ~ 7350 2100
+Wire Wire Line
+	7350 2400 7350 2100
+Wire Wire Line
+	7350 2700 7350 2400
+Connection ~ 7350 2400
+$Comp
+L Základní-deska-II-rescue:NCE20P45Q-NCE20P45Q-Základní-deska-II-rescue iQ1
+U 1 1 602FAA88
+P 7850 2250
+AR Path="/602FAA88" Ref="iQ1"  Part="1" 
+AR Path="/60188778/602FAA88" Ref="Q3"  Part="1" 
+F 0 "Q3" H 7850 2900 50  0000 C CNN
+F 1 "NCE20P45Q" H 7850 1600 50  0000 C CNN
+F 2 "FinalExamThesis:NCE20P45Q" H 7750 2350 50  0001 C CNN
+F 3 "" H 7750 2350 50  0001 C CNN
+	1    7850 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

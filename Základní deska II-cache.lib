@@ -181,11 +181,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Základní-deska-II-rescue_NCE20P45Q-NCE20P45Q
+# Základní-deska-II-rescue_NCE20P45Q-NCE20P45Q-Základní-deska-II-rescue
 #
-DEF Základní-deska-II-rescue_NCE20P45Q-NCE20P45Q iQ 0 40 Y Y 1 F N
+DEF Základní-deska-II-rescue_NCE20P45Q-NCE20P45Q-Základní-deska-II-rescue iQ 0 40 Y Y 1 F N
 F0 "iQ" 0 650 50 H V C CNN
-F1 "Základní-deska-II-rescue_NCE20P45Q-NCE20P45Q" 0 -800 50 H V C CNN
+F1 "Základní-deska-II-rescue_NCE20P45Q-NCE20P45Q-Základní-deska-II-rescue" 0 -800 50 H V C CNN
 F2 "" 700 -1100 50 H I C CNN
 F3 "" 700 -1100 50 H I C CNN
 DRAW
