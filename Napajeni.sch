@@ -169,9 +169,11 @@ Wire Wire Line
 Wire Wire Line
 	7600 3400 7600 3500
 $Comp
-L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL2
+L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard-Základní-deska-II-rescue PL2
 U 1 1 601FAA1F
 P 3200 2600
+AR Path="/601FAA1F" Ref="PL2"  Part="1" 
+AR Path="/60188778/601FAA1F" Ref="PL2"  Part="1" 
 F 0 "PL2" V 3300 2600 50  0000 C CNN
 F 1 "Plate" V 3400 2600 50  0000 C CNN
 F 2 "FinalExamThesis:Plate" H 3200 2600 50  0001 C CNN
@@ -180,12 +182,14 @@ F 3 "" H 3200 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L NCE20P45Q:NCE20P45Q iQ2
+L Základní-deska-II-rescue:NCE20P45Q-NCE20P45Q iQ2
 U 1 1 60300EC1
 P 5050 2250
+AR Path="/60300EC1" Ref="iQ2"  Part="1" 
+AR Path="/60188778/60300EC1" Ref="iQ2"  Part="1" 
 F 0 "iQ2" H 5050 2900 50  0000 C CNN
 F 1 "NCE20P45Q" H 5050 1550 50  0000 C CNN
-F 2 "" H 4950 2350 50  0001 C CNN
+F 2 "FinalExamThesis:NCE20P45Q" H 4950 2350 50  0001 C CNN
 F 3 "" H 4950 2350 50  0001 C CNN
 	1    5050 2250
 	-1   0    0    -1  
@@ -198,12 +202,14 @@ Connection ~ 8750 1900
 Wire Wire Line
 	8750 1900 8750 2100
 $Comp
-L NCE20P45Q:NCE20P45Q iQ1
+L Základní-deska-II-rescue:NCE20P45Q-NCE20P45Q iQ1
 U 1 1 602FAA88
 P 7850 2250
+AR Path="/602FAA88" Ref="iQ1"  Part="1" 
+AR Path="/60188778/602FAA88" Ref="iQ1"  Part="1" 
 F 0 "iQ1" H 7850 2900 50  0000 C CNN
 F 1 "NCE20P45Q" H 7850 1600 50  0000 C CNN
-F 2 "" H 7750 2350 50  0001 C CNN
+F 2 "FinalExamThesis:NCE20P45Q" H 7750 2350 50  0001 C CNN
 F 3 "" H 7750 2350 50  0001 C CNN
 	1    7850 2250
 	1    0    0    -1  
@@ -241,9 +247,11 @@ Wire Wire Line
 Wire Wire Line
 	4500 2100 3400 2100
 $Comp
-L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard PL1
+L Základní-deska-II-rescue:Plate-Tmc2209BreakoutBoard-Základní-deska-II-rescue PL1
 U 1 1 601FA68F
 P 3200 2100
+AR Path="/601FA68F" Ref="PL1"  Part="1" 
+AR Path="/60188778/601FA68F" Ref="PL1"  Part="1" 
 F 0 "PL1" V 2975 2112 50  0000 C CNN
 F 1 "Plate" V 3066 2112 50  0000 C CNN
 F 2 "FinalExamThesis:Plate" H 3200 2100 50  0001 C CNN

@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Plate-Tmc2209BreakoutBoard
+# Plate-Tmc2209BreakoutBoard-Základní-deska-II-rescue
 #
-DEF Plate-Tmc2209BreakoutBoard PL 0 40 Y Y 1 F N
+DEF Plate-Tmc2209BreakoutBoard-Základní-deska-II-rescue PL 0 40 Y Y 1 F N
 F0 "PL" 0 -250 50 H V C CNN
-F1 "Plate-Tmc2209BreakoutBoard" 0 -200 50 H V C CNN
+F1 "Plate-Tmc2209BreakoutBoard-Základní-deska-II-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 100 -50 50 H I C CNN
 DRAW
@@ -14,11 +14,11 @@ X ~ 1 0 200 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# TMC2209BreaoutBoard-Tmc2209BreakoutBoard
+# TMC2209BreaoutBoard-Tmc2209BreakoutBoard-Základní-deska-II-rescue
 #
-DEF TMC2209BreaoutBoard-Tmc2209BreakoutBoard 2209Br 0 40 Y Y 1 F N
+DEF TMC2209BreaoutBoard-Tmc2209BreakoutBoard-Základní-deska-II-rescue 2209Br 0 40 Y Y 1 F N
 F0 "2209Br" 0 -650 50 H V C CNN
-F1 "TMC2209BreaoutBoard-Tmc2209BreakoutBoard" 50 -550 50 H V C CNN
+F1 "TMC2209BreaoutBoard-Tmc2209BreakoutBoard-Základní-deska-II-rescue" 50 -550 50 H V C CNN
 F2 "" -250 0 50 H I C CNN
 F3 "" -250 0 50 H I C CNN
 DRAW
