@@ -567,6 +567,7 @@ F 0 "H1" H 750 696 50  0000 L CNN
 F 1 "MountingHole" H 750 605 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2mm" H 650 650 50  0001 C CNN
 F 3 "~" H 650 650 50  0001 C CNN
+F 4 "-" H 650 650 50  0001 C CNN "LCSC"
 	1    650  650 
 	1    0    0    -1  
 $EndComp
@@ -578,6 +579,7 @@ F 0 "H2" H 750 896 50  0000 L CNN
 F 1 "MountingHole" H 750 805 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2mm" H 650 850 50  0001 C CNN
 F 3 "~" H 650 850 50  0001 C CNN
+F 4 "-" H 650 850 50  0001 C CNN "LCSC"
 	1    650  850 
 	1    0    0    -1  
 $EndComp
@@ -589,6 +591,7 @@ F 0 "H3" H 750 1096 50  0000 L CNN
 F 1 "MountingHole" H 750 1005 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2mm" H 650 1050 50  0001 C CNN
 F 3 "~" H 650 1050 50  0001 C CNN
+F 4 "-" H 650 1050 50  0001 C CNN "LCSC"
 	1    650  1050
 	1    0    0    -1  
 $EndComp
@@ -600,6 +603,7 @@ F 0 "H4" H 750 1346 50  0000 L CNN
 F 1 "MountingHole" H 750 1255 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2mm" H 650 1300 50  0001 C CNN
 F 3 "~" H 650 1300 50  0001 C CNN
+F 4 "-" H 650 1300 50  0001 C CNN "LCSC"
 	1    650  1300
 	1    0    0    -1  
 $EndComp
@@ -611,6 +615,7 @@ F 0 "J3" H 4172 2482 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 4172 2573 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 2600 50  0001 C CNN
 F 3 "~" H 4200 2600 50  0001 C CNN
+F 4 "-" H 4200 2600 50  0001 C CNN "LCSC"
 	1    4200 2600
 	-1   0    0    1   
 $EndComp
@@ -638,7 +643,7 @@ F 0 "R17" V 3850 2600 50  0000 C CNN
 F 1 "330" V 3950 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3780 2600 50  0001 C CNN
 F 3 "~" H 3850 2600 50  0001 C CNN
-F 4 "C17513" H 3850 2600 50  0001 C CNN "LCSC"
+F 4 "C17617" H 3850 2600 50  0001 C CNN "LCSC"
 	1    3850 2600
 	0    1    1    0   
 $EndComp
@@ -650,7 +655,7 @@ F 0 "R16" V 3850 2500 50  0000 C CNN
 F 1 "330" V 3750 2500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3780 2500 50  0001 C CNN
 F 3 "~" H 3850 2500 50  0001 C CNN
-F 4 "C17513" H 3850 2500 50  0001 C CNN "LCSC"
+F 4 "C17617" H 3850 2500 50  0001 C CNN "LCSC"
 	1    3850 2500
 	0    1    1    0   
 $EndComp
@@ -662,6 +667,7 @@ F 0 "J4" H 6122 1732 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 6500 2200 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 1850 50  0001 C CNN
 F 3 "~" H 6150 1850 50  0001 C CNN
+F 4 "-" H 6150 1850 50  0001 C CNN "LCSC"
 	1    6150 1850
 	-1   0    0    1   
 $EndComp
@@ -673,6 +679,7 @@ F 0 "J8" H 6822 1732 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7150 2200 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6850 1850 50  0001 C CNN
 F 3 "~" H 6850 1850 50  0001 C CNN
+F 4 "-" H 6850 1850 50  0001 C CNN "LCSC"
 	1    6850 1850
 	-1   0    0    1   
 $EndComp
@@ -684,6 +691,7 @@ F 0 "J9" H 7222 1732 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7750 1450 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7250 1850 50  0001 C CNN
 F 3 "~" H 7250 1850 50  0001 C CNN
+F 4 "-" H 7250 1850 50  0001 C CNN "LCSC"
 	1    7250 1850
 	-1   0    0    1   
 $EndComp
@@ -695,6 +703,7 @@ F 0 "J6" H 6472 1732 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7000 1450 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6500 1850 50  0001 C CNN
 F 3 "~" H 6500 1850 50  0001 C CNN
+F 4 "-" H 6500 1850 50  0001 C CNN "LCSC"
 	1    6500 1850
 	-1   0    0    1   
 $EndComp
@@ -714,4 +723,37 @@ Wire Wire Line
 	7050 1550 7050 1750
 Wire Wire Line
 	7050 1850 7050 2100
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 602DE9AD
+P 11100 600
+F 0 "H5" H 10900 600 50  0000 L CNN
+F 1 "ToolingHole" H 10650 450 50  0000 L CNN
+F 2 "FinalExamThesis:Tooling_Hole_2" H 11100 600 50  0001 C CNN
+F 3 "~" H 11100 600 50  0001 C CNN
+	1    11100 600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 602DF5CD
+P 11100 850
+F 0 "H6" H 10900 850 50  0000 L CNN
+F 1 "ToolingHole" H 10650 700 50  0000 L CNN
+F 2 "FinalExamThesis:Tooling_Hole_2" H 11100 850 50  0001 C CNN
+F 3 "~" H 11100 850 50  0001 C CNN
+	1    11100 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 602DF825
+P 11100 1100
+F 0 "H7" H 10900 1100 50  0000 L CNN
+F 1 "ToolingHole" H 10650 950 50  0000 L CNN
+F 2 "FinalExamThesis:Tooling_Hole_2" H 11100 1100 50  0001 C CNN
+F 3 "~" H 11100 1100 50  0001 C CNN
+	1    11100 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
