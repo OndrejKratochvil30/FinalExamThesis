@@ -1,4 +1,5 @@
-(module NCE20P45Q (layer F.Cu) (tedit 602AEBC5)
+(module NCE20P45Q (layer F.Cu) (tedit 602D92FD)
+  (attr smd)
   (fp_text reference REF** (at -0.16 0.21) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.1)))
   )

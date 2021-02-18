@@ -25,6 +25,7 @@ F 1 "Conn_01x04_Male" H 8222 2823 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8250 2850 50  0001 C CNN
 F 3 "~" H 8250 2850 50  0001 C CNN
 F 4 "-" H 8250 2850 50  0001 C CNN "LCSC"
+F 5 "1" H 8250 2850 50  0001 C CNN "JLCPCB_IGNORE"
 	1    8250 2850
 	-1   0    0    1   
 $EndComp
@@ -104,7 +105,7 @@ F 3 "" H 7950 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Základní-deska-II-rescue:TMC2209BreaoutBoard-Tmc2209BreakoutBoard-Základní-deska-II-rescue 2209Br3
+L Zakladni_deska_II-rescue:TMC2209BreaoutBoard 2209Br3
 U 1 1 602743DD
 P 7300 2700
 F 0 "2209Br3" H 7275 2127 50  0000 C CNN
@@ -112,6 +113,7 @@ F 1 "TMC2209BreaoutBoard" H 7275 2036 50  0000 C CNN
 F 2 "FinalExamThesis:TMC_2209_Breaout_Board" H 7050 2700 50  0001 C CNN
 F 3 "" H 7050 2700 50  0001 C CNN
 F 4 "-" H 7300 2700 50  0001 C CNN "LCSC"
+F 5 "1" H 7300 2700 50  0001 C CNN "JLCPCB_IGNORE"
 	1    7300 2700
 	1    0    0    -1  
 $EndComp
@@ -160,7 +162,7 @@ F 0 "R14" V 6700 2650 50  0000 C CNN
 F 1 "1k" V 6800 2650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 2650 50  0001 C CNN
 F 3 "~" H 6700 2650 50  0001 C CNN
-F 4 "C17513" H 6700 2650 50  0001 C CNN "LCSC"
+F 4 "C17379" H 6700 2650 50  0001 C CNN "LCSC"
 	1    6700 2650
 	0    1    1    0   
 $EndComp
@@ -177,7 +179,6 @@ F 3 "~" H 6850 2650 50  0001 C CNN
 	1    6850 2650
 	1    0    0    -1  
 $EndComp
-Connection ~ 6850 2650
 $Comp
 L Device:R R18
 U 1 1 6029EFAD
@@ -186,7 +187,7 @@ F 0 "R18" V 6700 3050 50  0000 C CNN
 F 1 "1k" V 6600 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 3050 50  0001 C CNN
 F 3 "~" H 6700 3050 50  0001 C CNN
-F 4 "C17513" H 6700 3050 50  0001 C CNN "LCSC"
+F 4 "C17379" H 6700 3050 50  0001 C CNN "LCSC"
 	1    6700 3050
 	0    1    1    0   
 $EndComp
@@ -198,7 +199,7 @@ F 0 "R19" V 6700 3150 50  0000 C CNN
 F 1 "1k" V 6800 3150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 3150 50  0001 C CNN
 F 3 "~" H 6700 3150 50  0001 C CNN
-F 4 "C17513" H 6700 3150 50  0001 C CNN "LCSC"
+F 4 "C17379" H 6700 3150 50  0001 C CNN "LCSC"
 	1    6700 3150
 	0    1    1    0   
 $EndComp

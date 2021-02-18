@@ -22,6 +22,7 @@ F 1 "Conn_01x04_Male" H 8422 3723 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8450 3750 50  0001 C CNN
 F 3 "~" H 8450 3750 50  0001 C CNN
 F 4 "-" H 8450 3750 50  0001 C CNN "LCSC"
+F 5 "1" H 8450 3750 50  0001 C CNN "JLCPCB_IGNORE"
 	1    8450 3750
 	-1   0    0    1   
 $EndComp
@@ -97,7 +98,7 @@ F 3 "" H 8200 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Základní-deska-II-rescue:TMC2209BreaoutBoard-Tmc2209BreakoutBoard-Základní-deska-II-rescue 2209Br1
+L Zakladni_deska_II-rescue:TMC2209BreaoutBoard 2209Br1
 U 1 1 601F591C
 P 7600 3600
 F 0 "2209Br1" H 7575 3027 50  0000 C CNN
@@ -105,6 +106,7 @@ F 1 "TMC2209BreaoutBoard" H 7575 2936 50  0000 C CNN
 F 2 "FinalExamThesis:TMC_2209_Breaout_Board" H 7350 3600 50  0001 C CNN
 F 3 "" H 7350 3600 50  0001 C CNN
 F 4 "-" H 7600 3600 50  0001 C CNN "LCSC"
+F 5 "1" H 7600 3600 50  0001 C CNN "JLCPCB_IGNORE"
 	1    7600 3600
 	1    0    0    -1  
 $EndComp

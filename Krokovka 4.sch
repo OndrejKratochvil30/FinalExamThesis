@@ -98,7 +98,7 @@ $EndComp
 Wire Wire Line
 	3250 5800 3100 5800
 $Comp
-L Základní-deska-II-rescue:TMC2209BreaoutBoard-Tmc2209BreakoutBoard-Základní-deska-II-rescue 2209Br4
+L Zakladni_deska_II-rescue:TMC2209BreaoutBoard 2209Br4
 U 1 1 6027E2D2
 P 2700 5450
 F 0 "2209Br4" H 2675 4877 50  0000 C CNN
@@ -106,6 +106,7 @@ F 1 "TMC2209BreaoutBoard" H 2675 4786 50  0000 C CNN
 F 2 "FinalExamThesis:TMC_2209_Breaout_Board" H 2450 5450 50  0001 C CNN
 F 3 "" H 2450 5450 50  0001 C CNN
 F 4 "-" H 2700 5450 50  0001 C CNN "LCSC"
+F 5 "1" H 2700 5450 50  0001 C CNN "JLCPCB_IGNORE"
 	1    2700 5450
 	1    0    0    -1  
 $EndComp
@@ -128,7 +129,7 @@ F 0 "R12" V 1600 5300 50  0000 C CNN
 F 1 "1k" V 1700 5300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 5300 50  0001 C CNN
 F 3 "~" H 1700 5300 50  0001 C CNN
-F 4 "C17513" H 1700 5300 50  0001 C CNN "LCSC"
+F 4 "C17379" H 1700 5300 50  0001 C CNN "LCSC"
 	1    1700 5300
 	0    1    1    0   
 $EndComp
@@ -140,7 +141,7 @@ F 0 "R13" V 1800 5400 50  0000 C CNN
 F 1 "1k" V 1700 5400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 5400 50  0001 C CNN
 F 3 "~" H 1700 5400 50  0001 C CNN
-F 4 "C17513" H 1700 5400 50  0001 C CNN "LCSC"
+F 4 "C17379" H 1700 5400 50  0001 C CNN "LCSC"
 	1    1700 5400
 	0    1    1    0   
 $EndComp
@@ -176,6 +177,7 @@ F 1 "Conn_01x04_Male" H 3622 5573 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3650 5600 50  0001 C CNN
 F 3 "~" H 3650 5600 50  0001 C CNN
 F 4 "-" H 3650 5600 50  0001 C CNN "LCSC"
+F 5 "1" H 3650 5600 50  0001 C CNN "JLCPCB_IGNORE"
 	1    3650 5600
 	-1   0    0    1   
 $EndComp
